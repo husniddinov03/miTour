@@ -1,0 +1,121 @@
+.nav-text {
+    font-weight: 700;
+    font-size: 18px;
+    color: #D0D5DD;
+}
+
+button{
+    border: none;
+    @extend .nav-text;
+}
+
+nav {
+    width: 1610px;
+    margin: auto;
+    background: #101828;
+    border-radius: 20px;
+
+    .nav-box {
+        padding: 16px 20px;
+        width: 100%;
+
+        .nav-menu {
+            button {
+                padding: 16px 24px 16px 24px;
+                border-radius: 13px;
+                background: transparent;
+
+                .navbar-link {
+                    @extend .nav-text
+                }
+
+                &:hover {
+                    background-color: #1D2939;
+                    transition: 700ms;
+                }
+            }
+        }
+
+        .nav-lang {
+            background: #1D2939;
+            padding: 5px;
+            border-radius: 10px;
+
+            button {
+                padding: 12px 24px 12px 24px;
+                border-radius: 16px;
+                background: transparent;
+            }
+        }
+    }
+
+    img {
+        width: 214px;
+        height: 55px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .nav-box {
+        .nav-menu {
+            gap: 5px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-box {
+        flex-direction: column;
+        align-items: flex-start;
+
+        .logo {
+            margin-bottom: 10px;
+        }
+
+        .nav-menu {
+            flex-direction: column;
+            gap: 5px;
+            width: 100%;
+            
+
+            button {
+                width: 100%;
+                text-align: left;
+            }
+        }
+
+        .nav-lang {
+            margin-top: 10px;
+            width: 100%;
+            text-align: center;
+
+            button {
+                width: 100%;
+                text-align: center;
+                text-align: center;
+
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-box {
+        .logo img {
+            width: 150px;
+        }
+
+        .nav-menu {
+            button {
+                padding: 12px 16px;
+            }
+        }
+
+        .nav-lang {
+            button {
+                padding: 10px 16px;
+            }
+        }
+    }
+
+}

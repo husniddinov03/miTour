@@ -1,0 +1,7 @@
+export { default as Navbar } from "./Navbar/Navbar"
+export { default as HeaderComponent } from "./Header/HeaderComponent"
+export { default as Footer } from "./Footer/Footer"
+export { default as CardBox } from "./Cards/CardBox"
+export { default as TitlePage } from "./TitleName/TitlePage"
+export { default as Services } from "../Sections/Services/Services"
+export { default as Difference } from "../Sections/Difference/Difference"

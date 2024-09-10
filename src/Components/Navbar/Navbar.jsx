@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import "./Style.scss"; // Make sure this file contains the .container class
+import "./Style.scss";
 import { Link, NavLink } from 'react-router-dom';
 import { useInfoContext } from '../../Context/UseInfoContext';
 
@@ -8,6 +8,7 @@ const Navbar = () => {
     const [changeLanguage, setChangeLanguage] = useState("Eng")
     const [changePage, setChangePage] = useState("Home")
 
+    // console.log(DifferentIcon4);
     return (
         <nav className='nav'> {/* Make sure .container is defined */}
             <div className="nav-box" style={helpCss[1]}>

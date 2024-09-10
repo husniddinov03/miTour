@@ -5,7 +5,6 @@ import uuid4 from 'uuid4';
 
 const Services = () => {
     console.log(data);
-
     const uuid = uuid4();
 
     return (

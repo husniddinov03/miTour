@@ -28,25 +28,25 @@ const AboutUAE = () => {
   const imageData = [
     {
       id: 1,
-      img: "./src/assets/Images/image1.png"
+      img: "./assets/Images/image1.png"
     },
     {
       id: 2,
-      img: "./src/assets/Images/image2.png"
+      img: "./assets/Images/image2.png"
     },
 
     {
       id: 3,
-      img: "./src/assets/Images/image3.png"
+      img: "./assets/Images/image3.png"
     },
 
     {
       id: 4,
-      img: "./src/assets/Images/image4.png"
+      img: "./assets/Images/image4.png"
     },
     {
       id: 5,
-      img: "./src/assets/Images/image5.png"
+      img: "./assets/Images/image5.png"
     },
 
   ]

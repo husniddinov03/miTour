@@ -12,7 +12,7 @@ const Navbar = () => {
             <div className="nav-box" style={helpCss[1]}>
                 <div className="logo">
                     <Link to='/'>
-                        <img src="/src/assets/Icons/logo.png" alt="No image" />
+                        <img src="./assets/Icons/logo.png" alt="No image" />
                     </Link>
                 </div>
                 <div className="nav-menu">

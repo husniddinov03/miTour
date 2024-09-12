@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react'
 import { useInfoContext } from '../Context/UseInfoContext';
 import "./Style.scss"
-import { HeaderComponent, Services, Difference } from '../Components/';
+import { HeaderComponent, Services, Difference, HomeCarousel } from '../Components/';
 
 
 
@@ -13,6 +13,7 @@ const Home = () => {
       <HeaderComponent />
       <Services />
       <Difference />
+      <HomeCarousel />
     </div>
   );
 };

@@ -1,0 +1,96 @@
+.about {
+    width: 1320px !important;
+
+    .about-links {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        gap: 8px;
+
+        .about-link {
+            padding: 16px;
+            background: transparent;
+            border-radius: 16px;
+            color: #70747E;
+
+            &:hover {
+                background: #F2F4F7;
+                color: #101828;
+            }
+        }
+    }
+
+    .about-box1 {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .about-items {
+            background: #F2F3F3;
+            display: flex;
+            box-shadow: 0px 0px 54px 0px #25373F14;
+            justify-content: space-between;
+            gap: 20px;
+
+            .about-item {
+                border-radius: 20px;
+                padding: 20px;
+                background: #FFFFFF;
+                gap: 20px;
+
+                h2 {
+                    font-size: 24px;
+                    margin-bottom: 10px;
+                    line-height: 27px;
+                }
+            }
+        }
+    }
+
+    .about-items3 {
+        margin: 50px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .about-box2 {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        h2 {
+            font-size: 24px;
+            color: #101828;
+        }
+
+        p {
+            color: #404653;
+        }
+
+        .about-items2 {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+
+            .about-item2 {
+                display: flex;
+                justify-content: space-between;
+                background: #F5F5F5;
+                padding: 20px;
+                display: flex;
+                border-radius: 18px;
+
+                .about-item-left-text {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 3px;
+                }
+
+                b{
+                    font-size: 47px;
+                    color: #CACCD2;
+                }
+            }
+        }
+    }
+}

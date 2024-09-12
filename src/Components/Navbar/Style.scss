@@ -1,15 +1,4 @@
-.nav-text {
-    font-weight: 700;
-    font-size: 18px;
-    color: #D0D5DD;
-}
-
-button{
-    border: none;
-    @extend .nav-text;
-}
-
-nav {
+.nav {
     width: 1610px;
     margin: auto;
     background: #101828;
@@ -18,104 +7,132 @@ nav {
     .nav-box {
         padding: 16px 20px;
         width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .logo {
+            img {
+                width: 214px;
+                height: 55px;
+            }
+        }
 
         .nav-menu {
-            button {
-                padding: 16px 24px 16px 24px;
+            display: flex;
+            gap: 15px;
+
+            .nav-button {
+                border: none;
                 border-radius: 13px;
                 background: transparent;
-
-                .navbar-link {
-                    @extend .nav-text
-                }
+                padding: 16px 24px;
+                cursor: pointer;
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 26.46px;
+                text-align: left;
+                color: #FFFFFF;
 
                 &:hover {
                     background-color: #1D2939;
-                    transition: 700ms;
+                }
+            }
+
+            .navbar-link {
+                text-decoration: none;
+                color: inherit;
+
+                &.active {
+                    .nav-button {
+                        background-color: #1D2939;
+                        color: #fff; // Ensure text is readable
+                        padding: 16px 24px;
+                    }
                 }
             }
         }
 
         .nav-lang {
+            display: flex;
+            gap: 5px;
             background: #1D2939;
             padding: 5px;
             border-radius: 10px;
 
-            button {
-                padding: 12px 24px 12px 24px;
+            .lang-button {
+                padding: 12px 24px;
                 border-radius: 16px;
                 background: transparent;
+                border: none;
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 26.46px;
+                color: white;
+                cursor: pointer;
+
+                &.active {
+                    background-color: #344054;
+                }
             }
         }
     }
 
-    img {
-        width: 214px;
-        height: 55px;
-    }
-}
-
-@media (max-width: 1200px) {
-    .nav-box {
-        .nav-menu {
-            gap: 5px;
+    @media (max-width: 1200px) {
+        .nav-box {
+            .nav-menu {
+                gap: 5px;
+            }
         }
     }
-}
 
-@media (max-width: 768px) {
-    .nav-box {
-        flex-direction: column;
-        align-items: flex-start;
-
-        .logo {
-            margin-bottom: 10px;
-        }
-
-        .nav-menu {
+    @media (max-width: 768px) {
+        .nav-box {
             flex-direction: column;
-            gap: 5px;
-            width: 100%;
-            
+            align-items: flex-start;
 
-            button {
-                width: 100%;
-                text-align: left;
+            .logo {
+                margin-bottom: 10px;
             }
-        }
 
-        .nav-lang {
-            margin-top: 10px;
-            width: 100%;
-            text-align: center;
+            .nav-menu {
+                flex-direction: column;
+                gap: 5px;
 
-            button {
+                .nav-button {
+                    width: 100%;
+                }
+            }
+
+            .nav-lang {
+                margin-top: 10px;
                 width: 100%;
                 text-align: center;
-                text-align: center;
 
-            }
-        }
-    }
-}
-
-@media (max-width: 480px) {
-    .nav-box {
-        .logo img {
-            width: 150px;
-        }
-
-        .nav-menu {
-            button {
-                padding: 12px 16px;
-            }
-        }
-
-        .nav-lang {
-            button {
-                padding: 10px 16px;
+                .lang-button {
+                    width: 100%;
+                }
             }
         }
     }
 
+    @media (max-width: 480px) {
+        .nav-box {
+            .logo img {
+                width: 150px;
+            }
+
+            .nav-menu {
+                .nav-button {
+                    padding: 12px 16px;
+                }
+            }
+
+            .nav-lang {
+                .lang-button {
+                    padding: 10px 16px;
+                }
+            }
+        }
+    }
 }

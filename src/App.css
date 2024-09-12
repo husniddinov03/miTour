@@ -2,8 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Helvetica Now Display;
+    transition: 500ms;
 }
 
+body{
+    width: 1920px;
+}
 
 a,
 .dom-link {
@@ -53,3 +58,4 @@ ol {
 .default-button:hover {
     background: #CACCD2;
 }
+

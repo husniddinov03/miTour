@@ -1,0 +1,84 @@
+.homeCarousel {
+    text-align: center;
+    margin-top: 150px;
+
+    .default-title-text {
+        font-size: 44px;
+        margin-bottom: 20px; // Space below the title
+    }
+
+    .swiper {
+        margin-top: 20px;
+    }
+
+    .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #0000007f;
+        background: #fff;
+        
+        img {
+            width: 100%;
+            height: auto; // Maintain aspect ratio
+        }
+    }
+
+    // Responsive styles
+    @media (max-width: 1024px) {
+        .default-title-text {
+            font-size: 36px;
+        }
+
+        .swiper {
+            margin-top: 15px;
+        }
+
+        .swiper-slide {
+            width: 300px; // Adjust slide width
+        }
+    }
+
+    @media (max-width: 768px) {
+        .default-title-text {
+            font-size: 28px;
+        }
+
+        .swiper {
+            margin-top: 10px;
+        }
+
+        .swiper-slide {
+            width: 250px; // Adjust slide width
+        }
+    }
+
+    @media (max-width: 425px) {
+        .default-title-text {
+            font-size: 22px;
+            margin-top: 80px;
+        }
+
+        .swiper {
+            margin-top: 5px;
+        }
+
+        .swiper-slide {
+            width: 200px; // Adjust slide width
+        }
+    }
+
+    @media (max-width: 320px) {
+        .default-title-text {
+            font-size: 18px;
+        }
+
+        .swiper {
+            margin-top: 5px;
+        }
+
+        .swiper-slide {
+            width: 150px; // Adjust slide width
+        }
+    }
+}

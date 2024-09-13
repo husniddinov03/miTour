@@ -27,7 +27,7 @@ const Services = () => {
                 ))}
             </div>
 
-            <button className='default-title-text default-button mt-5 m-auto'>See more services <img src="/src/assets/Icons/rightIcon.png" alt="No icon" /></button>
+            <button className='default-title-text default-button mt-5 m-auto'>See more services <img src="./js/Icons/rightIcon.png" alt="No icon" /></button>
         </div>
     );
 };

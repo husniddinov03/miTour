@@ -3,6 +3,7 @@ import "./Style.scss";
 import { TitlePage } from '../../Components';
 import data from "./data";
 
+
 const Difference = () => {
     return (
         <div className='difference containerElement mt-5'>

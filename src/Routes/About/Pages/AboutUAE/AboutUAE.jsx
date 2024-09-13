@@ -1,5 +1,6 @@
 import React from 'react'
 import { PageNavbar } from '../../../../Components'
+import { image1, image2, image3, image4, image5 } from '../../../image'
 import "./Style.scss"
 
 const AboutUAE = () => {
@@ -28,32 +29,32 @@ const AboutUAE = () => {
   const imageData = [
     {
       id: 1,
-      img: "./assets/Images/image1.png"
+      img: image1
     },
     {
       id: 2,
-      img: "./assets/Images/image2.png"
+      img: image2
     },
 
     {
       id: 3,
-      img: "./assets/Images/image3.png"
+      img: image3
     },
 
     {
       id: 4,
-      img: "./assets/Images/image4.png"
+      img: image4
     },
     {
       id: 5,
-      img: "./assets/Images/image5.png"
+      img: image5
     },
 
   ]
 
   return (
     <div className='aboutUae containerElement'>
-      <PageNavbar data={data} />  
+      <PageNavbar data={data} />
 
       <div className="aboutUae-box">
         <br />

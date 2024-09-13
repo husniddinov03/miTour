@@ -17,7 +17,7 @@ const Services = () => {
             <div id={uuid} style={{ display: "flex", marginTop: "100px", gap: "25px", flexWrap: "wrap", margin: "30px" }} className="servicesBox">
 
                 {data.map((datas) => (
-                    <div key={datas.id} id={datas.id} className="services-item" style={{
+                    <div key={datas.id} className="services-item" style={{
                         width: "750px", height: "230px", padding: "40px", boxShadow: "0px 0px 54px 0px #25373F14", borderRadius: "20px"
                     }}>
                         <img src={datas.icon} alt="No icon" />

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import "./Style.scss";
 import { Link, NavLink } from 'react-router-dom';
 import { useInfoContext } from '../../Context/UseInfoContext';
+import { logo } from '../image'
 
 const Navbar = () => {
     const { helpCss } = useInfoContext();
@@ -12,7 +13,7 @@ const Navbar = () => {
             <div className="nav-box" style={helpCss[1]}>
                 <div className="logo">
                     <Link to='/'>
-                        <img src="./js/Icons/logo.png" alt="No image" />
+                        <img src={logo} alt="No image" />
                     </Link>
                 </div>
                 <div className="nav-menu">

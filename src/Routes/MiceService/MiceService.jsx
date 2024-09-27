@@ -23,13 +23,13 @@ const MiceService = () => {
     <div className='miceService containerElement'>
       {
         data.map(datas => (
-          <CardPage item={datas} advImg={data} />
+          <CardPage key={datas.id} item={datas} advImg={data} />
         ))
       }
       <br />
       {
         advImg.map(img => (
-          <img style={{ width: "100%" }} src={img.img} alt="No image" />
+          <img key={img.id} style={{ width: "100%" }} src={img.img} alt="No image" />
         ))
       }
       <br /><br />

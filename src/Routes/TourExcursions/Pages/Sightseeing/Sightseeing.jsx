@@ -22,7 +22,7 @@ const Sightseeing = () => {
       <div className="images-sighseening">
         {
           images.map(img => (
-            <img src={img.img} alt="No image" />
+            <img key={img.id} src={img.img} alt="No image" />
           ))
         }
       </div>

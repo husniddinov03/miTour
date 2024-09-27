@@ -3,10 +3,19 @@ import "./Style.scss";
 import { Link, NavLink } from 'react-router-dom';
 import { useInfoContext } from '../../Context/UseInfoContext';
 import { logo } from '../image'
+import { useTranslation } from 'react-i18next';
 
 const Navbar = () => {
     const { helpCss } = useInfoContext();
     const [changeLanguage, setChangeLanguage] = useState("Eng");
+    const [t, i18n] = useTranslation("globbal")
+
+
+    const handleChangeLanguage = (lang, changeLang) => {
+        i18n.changeLanguage(lang)
+        setChangeLanguage(changeLang)
+    }
+
 
     return (
         <nav className='nav'>
@@ -36,9 +45,10 @@ const Navbar = () => {
                         <button className="nav-button">Contact</button>
                     </NavLink>
                 </div>
+                    <button className='nav-top-btn default-title-text'>Book Now</button>
                 <div className="nav-lang">
-                    <button className={changeLanguage === "Eng" ? "lang-button active" : "lang-button"} onClick={() => setChangeLanguage("Eng")}>Eng</button>
-                    <button className={changeLanguage === "Ru" ? "lang-button active" : "lang-button"} onClick={() => setChangeLanguage("Ru")}>Ru</button>
+                    <button className={changeLanguage === "Eng" ? "lang-button active" : "lang-button"} onClick={() => handleChangeLanguage("eng", "Eng")}>Eng</button>
+                    <button className={changeLanguage === "Ru" ? "lang-button active" : "lang-button"} onClick={() => handleChangeLanguage("Rus", "Ru")}>Ru</button>
                 </div>
             </div>
         </nav>

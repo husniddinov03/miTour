@@ -15,7 +15,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        border: 1px solid #0000007f;
         background: #fff;
         
         img {
@@ -35,7 +34,7 @@
         }
 
         .swiper-slide {
-            width: 300px; // Adjust slide width
+            width: 300px; 
         }
     }
 

@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { useTransition } from 'react'
 import "./Style.scss"
 import TitlePage from '../TitleName/TitlePage'
 import { headerBannerImage2, headerBannerImage3, MSR04060, imagePng, rightIcon } from '../image'
+import { useTranslation } from 'react-i18next'
+
 
 const HeaderComponent = () => {
+
+  const [t] = useTranslation("globbal")
 
   return (
     <header className='header containerElement mt-5'>
@@ -27,7 +31,10 @@ const HeaderComponent = () => {
 
       <div style={{ padding: "" }} className="header-text-section containerElement text-center">
         <TitlePage text={"About Us"} />
-        <h1 style={{ fontSize: "44px" }} className='default-title-text'>Magical Desert Travel and Tourism L.L.C.</h1>
+        <h1 style={{ fontSize: "44px" }} className='default-title-text'>
+          {/* Magical Desert Travel and Tourism L.L.C. */}
+          {t("header.AboutUsTitle")}
+        </h1>
         <p className='default-desc-text'> Your gateway to experiencing the enchanting beauty and rich culture of the United Arab Emirates. <br /> Established with a passion for travel and a commitment to excellence, we are dedicated to providing exceptional travel <br /> experiences that are tailored to meet the unique needs and preferences of our clients.</p>
         <button className="default-desc-text default-button">Read more <img src={rightIcon} alt="No icon" /></button>
       </div>

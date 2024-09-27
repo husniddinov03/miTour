@@ -4,7 +4,8 @@ import { Link } from 'react-router-dom';
 import { PageNavbar } from '../../Components';
 
 const About = () => {
-  const data = [
+
+  const dataPage = [
     {
       id: 1,
       text: "Magical Desert Travel and Tourism L.L.C.",
@@ -27,7 +28,7 @@ const About = () => {
 
   return (
     <div className='about containerElement'>
-      <PageNavbar data={data} />
+      <PageNavbar dataPage={dataPage} />
 
       <div className="about-box1">
         <h1 className='default-title-text'>Magical Desert Travel and Tourism L.L.C.</h1>

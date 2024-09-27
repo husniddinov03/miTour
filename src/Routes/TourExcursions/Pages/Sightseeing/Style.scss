@@ -1,0 +1,17 @@
+.sightseeing{
+    width: 1340px;
+
+    .images-sighseening{
+        display: flex;
+        gap: 20px;
+        padding-bottom: 50px;
+
+
+        img{
+            width: 433px;
+            height: 300px;
+            border-radius: 16px;
+            margin-top: 20px;
+        }
+    }
+}

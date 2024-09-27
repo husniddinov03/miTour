@@ -1,9 +1,7 @@
 import React, { useRef, useState } from 'react'
 import { useInfoContext } from '../Context/UseInfoContext';
 import "./Style.scss"
-import { HeaderComponent, Services, Difference, HomeCarousel } from '../Components/';
-
-
+import { HeaderComponent, Services, Difference } from '../Components/';
 
 const Home = () => {
   // const {  } = useInfoContext();
@@ -13,7 +11,7 @@ const Home = () => {
       <HeaderComponent />
       <Services />
       <Difference />
-      <HomeCarousel />
+      {/* <HomeCarousel /> */}
     </div>
   );
 };

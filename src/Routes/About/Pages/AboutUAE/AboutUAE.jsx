@@ -5,7 +5,7 @@ import "./Style.scss"
 
 const AboutUAE = () => {
 
-  const data = [
+  const dataPage = [
     {
       id: 1,
       text: "Magical Desert Travel and Tourism L.L.C.",
@@ -54,7 +54,7 @@ const AboutUAE = () => {
 
   return (
     <div className='aboutUae containerElement'>
-      <PageNavbar data={data} />
+      <PageNavbar dataPage={dataPage} />
 
       <div className="aboutUae-box">
         <br />

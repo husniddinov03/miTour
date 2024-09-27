@@ -4,7 +4,8 @@ import {
     ServicePageIcon3, 
     ServicePageIcon4, 
     ServicePageIcon5, 
-    ServicePageIcon6 
+    ServicePageIcon6,
+    ServicePageIcon7 
 } from "../image";
 
 const data = [
@@ -52,7 +53,7 @@ const data = [
     },
     {
         id: 7,
-        icon: "./assets/Icons/ServicePageIcon7.png", // Bu ikonani import qilmagan bo'lsangiz, shunday qoldiring
+        icon: ServicePageIcon7,
         title: "MICE (Meetings, Incentives, Conferences, Exhibitions) Services",
         descriptions: "Elevate your corporate events with our MICE services, tailored to deliver exceptional experiences. From venue selection to logistics, we handle all aspects of planning and execution.",
         bottomText: "Comprehensive event management, luxury venues, seamless execution.",

@@ -1,21 +1,20 @@
 // Import necessary Swiper modules
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
-import data from './data';
-import './Style.scss'; // Ensure to use SCSS for styles
+// import data from './data';
+import './Style.scss'; 
 
 import 'swiper/css';
 import 'swiper/css/autoplay';
 
-const HomeCarousel = () => {
+const HomeCarousel = ({data}) => {
     return (
         <div className="homeCarousel containerElement">
-            <h1 className='default-title-text'>Tours & Activities</h1>
             <Swiper
                 className='swiper'
                 modules={[Autoplay]}
-                spaceBetween={20} // Adjusted space for better responsiveness
-                slidesPerView={4} // Default number of slides per view
+                spaceBetween={20}
+                slidesPerView={4}
                 autoplay={{
                     delay: 3000,
                     disableOnInteraction: false,

@@ -3,7 +3,7 @@ import { PageNavbar } from '../../../../Components'
 
 const AboutGallery = () => {
 
-  const data = [
+  const dataPage = [
     {
       id: 1,
       text: "Magical Desert Travel and Tourism L.L.C.",
@@ -26,8 +26,7 @@ const AboutGallery = () => {
 
   return (
     <div className='aboutUae containerElement'>
-      <PageNavbar data={data}/>
-
+      <PageNavbar dataPage={dataPage}/>
     
     </div>
   )

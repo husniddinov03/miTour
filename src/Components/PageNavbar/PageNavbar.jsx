@@ -2,12 +2,12 @@ import React from 'react';
 import "./Style.scss";
 import { Link } from 'react-router-dom';
 
-const PageNavbar = ({ data }) => {
+const PageNavbar = ({ dataPage }) => {
     return (
         <div className='pageNavbar'>
             <div className="about-links flex-element">
                 {
-                    data.map(datas => (
+                    dataPage.map(datas => (
                         <Link 
                             key={datas.id} 
                             style={datas.active ? { background: "#F2F4F7" } : { background: "transparent" }} 

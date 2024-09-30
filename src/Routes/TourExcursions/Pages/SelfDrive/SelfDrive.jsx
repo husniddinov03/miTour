@@ -6,31 +6,34 @@ import serviceData from "./serviceData"
 import data from './data'
 import "./Style.scss"
 import CardService from '../../../../Components/ServiceCard/CardService'
+import { useTranslation } from 'react-i18next'
 
 const SelfDrive = () => {
+
+  const { t } = useTranslation("globbal")
 
   const dataPage = [
     {
       id: 1,
-      text: "Adventures",
+      text: "itemNavTour.advantures",
       to: "/tourExcursions",
       active: false
     },
     {
       id: 2,
-      text: "Attractions",
+      text: "itemNavTour.attractions",
       to: "/attractions",
       active: false
     },
     {
       id: 3,
-      text: "Sightseeing",
+      text: "itemNavTour.sightseeing",
       to: "/sightseeing",
       active: false
     },
     {
       id: 4,
-      text: "Self Drive luxury cars",
+      text: "itemNavTour.selfDrive",
       to: "/selfDrive",
       active: true
     },
@@ -43,20 +46,21 @@ const SelfDrive = () => {
       {
         data.map(datas => (
           <div key={datas.id} className="selfDrive-box d-flex flex-column">
-            <h2 className='default-title-text'>{datas.title}</h2>
+           
+            <h2 className='default-title-text'>{t(datas.title)}</h2>
             <br />
             <div className="selfDrive-items flex-column">
               <div className="selfDrive-item">
-                <img src={TableIcon} alt="No image" /><b className='default-title-text'> Duration: </b><p className='default-desc-text'>{datas.duration}</p>
+                <img src={TableIcon} alt="No image" /><b className='default-title-text'> {t("selfDrive.durationText")}</b><p className='default-desc-text'>{t(datas.duration)}</p>
 
               </div>
               <div className="selfDrive-item">
-                <img src={TimeIcon} alt="No image" /><b className='default-title-text'> Gudied By: </b><p className='default-desc-text'>{datas.gudiedBy}</p>
+                <img src={TimeIcon} alt="No image" /><b className='default-title-text'>{t("selfDrive.gudiedByText")}</b><p className='default-desc-text'>{t(datas.gudiedBy)}</p>
 
               </div>
             </div>
             <div className="selfDrive-items mt-3 align-items-center gap-2">
-              <b className='default-title-text'>Pick-up/Drop-off </b><p className='default-desc-text'> Arranged in a normal vehicle from your hotel or residence to the excursion starting point              </p>
+              <b className='default-title-text'>{t("selfDrive.pickUpText")}</b><p className='default-desc-text'>{t("selfDrive.bottom")}</p>
             </div>
           </div>
         ))
@@ -70,7 +74,8 @@ const SelfDrive = () => {
         }
       </div>
 
-      <TitlePage text={"Highlights"} />
+      <TitlePage textKey="selfDrive.titlePage" />
+
 
       <div className="selfDrive-serviceData">
         {

@@ -1,14 +1,217 @@
 {
-   "header": {
-      "message": "Welcome to Magical Desert Travel and Tourism",
-      "descriptionHeader": "Discover the wonders of the UAE with Magical Desert Travel and Tourism L.L.C. We specialize in crafting unforgettable experiences that showcase the beauty, culture, and adventure of the desert and beyond.",
-      "AboutUsTitle": "Magical Desert Travel and Tourism L.L.C.",
-      "AboutUsDesc": " Your gateway to experiencing the enchanting beauty and rich culture of the United Arab Emirates.  Established with a passion for travel and a commitment to excellence, we are dedicated to providing exceptional travel experiences that are tailored to meet the unique needs and preferences of our clients.",
-      "AboutUsWhiteBtn": "Read more",
-      "AboutUsBlackBtn": "Contact Us"
+   "navbar": {
+      "home": "Home",
+      "aboutUs": "About Us",
+      "services": "Services",
+      "tourExcursions": "Tour Excursions",
+      "miceService": "Mice Service",
+      "contact": "Contact",
+      "topBtn": "Book now"
    },
-   "Services": {
-      "body": "Hello to Body"
+   "header": {
+      "message": "Welcome to Magical Desert",
+      "message2": "Travel and Tourism",
+      "descriptionHeader": "Discover the wonders of the UAE with Magical Desert Travel and Tourism L.L.C. We specialize in crafting",
+      "descriptionHeader2": "unforgettable experiences that showcase the beauty,culture, and adventure of the desert and beyond.",
+      "aboutUsTitlePage": "About Us",
+      "aboutUsTitle": "Magical Desert Travel and Tourism L.L.C.",
+      "aboutUsDesc1": " Your gateway to experiencing the enchanting beauty and rich culture of the United Arab Emirates. ",
+      "aboutUsDesc2": "Established with a passion for travel and a commitment to excellence, we are dedicated to providing ",
+      "aboutUsDesc3": "exceptional travel experiences that are tailored to meet the unique needs and preferences of our clients.",
+      "aboutUsWhiteBtn": "Read more"
+   },
+   "servicesSec": {
+      "title": "Our",
+      "titleRight": "Services",
+      "item1": {
+         "title": "Excursions",
+         "description": "Explore the desert's vastness, historical sites, and modern marvels with our guided tours"
+      },
+      "item2": {
+         "title": "Transfers",
+         "description": "Seamless and comfortable transfers to and from any location in the UAE."
+      },
+      "item3": {
+         "title": "Hotel Bookings",
+         "description": "Stay at the finest hotels or find budget-friendly accommodations that suit your preferences."
+      },
+      "item4": {
+         "title": "Attraction Tickets",
+         "description": "Get direct access to the UAE's most popular attractions, from theme parks to cultural landmarks."
+      },
+      "servicePageBtn": "See more services "
+   },
+   "difference": {
+      "title": "What makes us different",
+      "titleRight": "Why Choose Us",
+      "item1": {
+         "title": "Personalized Service",
+         "description": "Every journey is unique, and we tailor our services to ensure your experience is just as you imagined."
+      },
+      "item2": {
+         "title": "Expert Guidance",
+         "description": "With years of experience, our guides offer deep insights and knowledge about the destinations we explore."
+      },
+      "item3": {
+         "title": "Luxury and Comfort",
+         "description": "Whether you're opting for a high-end experience or a more modest adventure, we ensure comfort and quality every step of the way"
+      },
+      "item4": {
+         "title": "Experience the Magic of the Desert",
+         "description": "At Magical Desert Travel and Tourism, we believe in creating memories that last a lifetime. From the golden dunes of the desert to the sparkling waters of the Arabian Gulf, let us take you on a journey like no other"
+      }
+   },
+   "about": {
+      "title": "Magical Desert Travel and Tourism L.L.C.",
+      "description": "Your gateway to experiencing the enchanting beauty and rich culture of the United Arab Emirates. Established with a passion for travel and a commitment to excellence, we are dedicated to providing exceptional travel experiences that are tailored to meet the unique needs and preferences of our clients.",
+      "title2": "Why Choose Magical Desert Travel and Tourism?",
+      "description2": "With years of experience in the travel industry, we offer a wealth of knowledge and expertise. Our team of dedicated professionals is passionate about creating unique travel experiences that go beyond the ordinary. Whether you’re looking for luxury or adventure, we tailor our services to match your desires, ensuring a memorable journey every time.",
+      "title3": "Our Values",
+      "item1": {
+         "title": "Our Vision",
+         "description": "To create unforgettable travel experiences that showcase the best of the UAE, blending luxury, adventure, and cultural exploration."
+      },
+      "item2": {
+         "title": "Our Vision",
+         "description": "To be the leading travel and tourism company in the UAE, known for our personalized service, expert knowledge, and commitment to quality."
+      },
+      "bottomItem1": {
+         "title": "Excellence",
+         "description": "We strive for excellence in everything we do, from planning your trip to providing exceptional customer service."
+      },
+      "bottomItem2": {
+         "title": "Integrity",
+         "description": "Honesty and transparency are at the core of our business. We believe in building trust through open communication and ethical practices."
+      },
+      "bottomItem3": {
+         "title": "Innovation",
+         "description": "We are constantly seeking new and creative ways to enhance our services and provide unique experiences for our clients."
+      }
+   },
+   "aboutUae": {
+      "title": "Welcome to the United Arab Emirates",
+      "description": "A captivating blend of ancient history and cutting-edge modernity. Formed in 1971, the UAE has grown from a group of small desert communities into a global hub of innovation and luxury. ",
+      "description2": "The country’s seven emirates—Abu Dhabi, Dubai, Sharjah, Ajman, Umm Al Quwain, Ras Al Khaimah, and Fujairah—each offer their own unique experiences, from the towering skyscrapers of Dubai to the cultural treasures of Sharjah and the natural beauty of Fujairah's mountains and beaches. Discover the rich heritage, vibrant traditions, and endless adventures that make the UAE a world-class destination."
+   },
+   "servicesPage": {
+      "item1": {
+         "title": "Excursions",
+         "description": "Experience the UAE’s stunning landscapes and cultural treasures with our expertly guided excursions. From desert safaris to city tours, we offer a range of options that cater to all interests and preferences.",
+         "bottomText": "Professional drivers, luxury vehicles, timely service."
+      },
+      "item2": {
+         "title": "Transfers",
+         "description": "Provide seamless and comfortable transfers to and from any location within the UAE. Whether it’s airport pickups, hotel transfers, or inter-city travel, we ensure a smooth journey every time.",
+         "bottomText": "Professional drivers, luxury vehicles, timely service."
+      },
+      "item3": {
+         "title": "Hotel Bookings",
+         "description": "Enjoy exclusive rates and tailored accommodations with our hotel booking services. Whether you seek luxury or budget options, we’ve got you covered with the best stays across the UAE.",
+         "bottomText": "Wide selection of hotels, competitive pricing, easy booking process."
+      },
+      "item4": {
+         "title": "Attraction Tickets",
+         "description": "Skip the lines and secure your tickets to the UAE’s top attractions through us. From iconic landmarks to thrilling theme parks, we provide direct access to all major sites.",
+         "bottomText": "Instant booking, exclusive offers, all major attractions covered."
+      },
+      "item5": {
+         "title": "Yacht Charters",
+         "description": "Sail through the azure waters of the Arabian Gulf with our luxurious yacht charters. Whether for leisure or corporate events, we offer a range of yachts to suit your needs.",
+         "bottomText": "Luxurious yachts, professional crew, customizable experiences."
+      },
+      "item6": {
+         "title": "Helicopter Tours",
+         "description": "Take to the skies and witness the UAE’s stunning landscapes and iconic landmarks from above with our exclusive helicopter tours. Experience the thrill of a bird’s-eye view over Dubai, Abu Dhabi, and beyond.",
+         "bottomText": "Breathtaking aerial views, experienced pilots, premium safety standards."
+      },
+      "item7": {
+         "title": "MICE (Meetings, Incentives, Conferences, Exhibitions) Services",
+         "description": "Elevate your corporate events with our MICE services, tailored to deliver exceptional experiences. From venue selection to logistics, we handle all aspects of planning and execution.",
+         "bottomText": "Comprehensive event management, luxury venues, seamless execution."
+      }
+   },
+   "advantures": {
+      "item1": {
+         "title": "Desert Safari",
+         "description": "Embark on a thrilling desert safari that takes you deep into the heart of the Arabian desert. Experience the excitement of dune bashing in a 4x4 vehicle, ride a camel through the golden sands, and try your hand at sandboarding. As the sun sets, enjoy a traditional Bedouin-style dinner under the stars, complete with live entertainment, henna painting, and shisha.",
+         "btn": "Book now"
+      },
+      "item2": {
+         "title": "Buggy Safari",
+         "description": "For those seeking an adrenaline-packed adventure, our buggy safari is the perfect choice. Drive your own dune."
+      },
+      "item3": {
+         "title": "Fishing Tour Experience in Dubai",
+         "description": "Embark on an unforgettable Fishing Tour in Dubai’s crystal-clear waters. Whether you're a seasoned angler or a beginner, this adventure offers a perfect blend of excitement and relaxation. Set sail from the Dubai Marina aboard a fully equipped fishing boat, guided by expert crew members with years of experience in the local waters."
+      },
+      "item4": {
+         "title": "Atlantis Water Park",
+         "description": "Dive into a day of fun and adventure at Atlantis Aquaventure Waterpark, one of Dubai’s top attractions. With exhilarating slides like the Leap of Faith, a lazy river that winds through the park, and a private beach, there’s something for everyone. Don’t miss the chance to interact with marine life at the Lost Chambers Aquarium, making it a perfect family getaway."
+      },
+      "item5": {
+         "title": "Helicopter Tour",
+         "description": "Experience Dubai from a unique vantage point with our helicopter tours, offering panoramic views of the city’s iconic skyline. Fly over the Palm Jumeirah, marvel at the Burj Al Arab’s sail-shaped structure, and capture stunning aerial shots of the world-famous Burj Khalifa. This unforgettable journey provides a bird’s-eye view of Dubai’s architectural wonders and natural beauty."
+      },
+      "item6": {
+         "title": "Yacht Tours",
+         "description": "Embark on a luxurious yacht tour through the Arabian Gulf, where you’ll enjoy breathtaking views of Dubai’s coastline. Whether you’re celebrating a special occasion or simply looking to relax in style, our yacht tours offer a blend of comfort, elegance, and exclusivity. Enjoy the gentle sea breeze, soak up the sun, and admire the city’s landmarks from the water."
+      }
+   },
+   "contact": {
+      "title": "Magical Desert Travel and Tourism L.L.C",
+      "number": "Phone: +971581694135",
+      "email": "Operations@magical-desert.com",
+      "webSite": "www.magical-deserts.com",
+      "adressTitle": "Adress",
+      "adress": "Building Dubai, Area Hor Al Anz, AL MANSOORI Office Number 144"
+   },
+   "miceService": {
+      "title": "MICE Group Services Overview",
+      "descriptions": "Magical Desert Travel and Tourism specializes in delivering world-class MICE group services, ensuring your corporate events, incentives, and exhibitions are seamlessly organized in the heart of Dubai and across the UAE. With our deep expertise and local knowledge, we offer comprehensive services tailored to meet the needs of businesses of all sizes."
+   },
+   "attractions": {
+      "title": "Attraction Tickets in Dubai",
+      "description": "Explore Dubai’s world-class attractions with ease through our Attraction Tickets service. Whether you're seeking adventure, culture, or relaxation, we provide tickets to all major attractions in Dubai and the UAE, ensuring a seamless experience for both luxury and budget travelers. From iconic landmarks like the Burj Khalifa, thrilling parks such as IMG Worlds of Adventure, to serene desert safaris and cultural tours, we have it all."
+   },
+   "sightseeing": {
+      "title": "Sightseeing Tours in the UAE",
+      "description": "Experience the captivating beauty and rich culture of the UAE with our tailored Sightseeing Tours. Whether you're looking to explore breathtaking architecture, immerse yourself in local traditions, or enjoy modern attractions, the UAE offers something for every traveler. Our sightseeing tours take you through the heart of the country’s most iconic sites, showcasing a perfect blend of heritage and innovation. From picturesque coastal views to impressive urban landscapes, every moment of your journey is carefully curated to ensure a memorable experience. With knowledgeable guides and comfortable transportation, you’ll uncover hidden gems, cultural landmarks, and must-see destinations with ease.  Whether you're planning a half-day trip or a full-day exploration, our sightseeing tours are designed to provide a well-rounded, enriching experience for every type of traveler."
+   },
+   "selfDrive": {
+      "title": "Self-Drive Luxury Car Experience",
+      "durationText": "Duration",
+      "gudiedByText": "Gudied By",
+      "duration": "2 hours",
+      "gudiedBy": " Professional and experienced driver (in a separate guide vehicle)",
+      "bottom": "Arranged in a normal vehicle from your hotel or residence to the excursion starting point",
+      "pickUpText": "Pick-up/Drop-off",
+      "titlePage": "Highlights",
+      "servItem1": {
+         "title": "Luxury Fleet",
+         "description": "Choose from an exclusive selection of high-end vehicles, including Lamborghini, Ferrari, Chevrolet Corvette, and G-Wagon."
+      },
+      "servItem2": {
+         "title": "Planned Route",
+         "description": "Experience a scenic and exhilarating drive with two stops at iconic locations for memorable photo opportunities."
+      },
+      "servItem3": {
+         "title": "Experience the Thrill",
+         "description": "Drive a luxury car through the streets of Dubai, taking in its stunning skyline and landmarks"
+      },
+      "servItem4": {
+         "title": "Photo Stops",
+         "description": "Two designated stops for perfect photo moments at key Dubai locations."
+      }
+   },
+   "itemNavTour": {
+      "advantures": "Advantures",
+      "attractions": "Attractions",
+      "sightseeing": "Sightseeing",
+      "selfDrive": "Self Drive luxury cars"
+   },
+   "itemNavAbout": {
+      "magical": "Magical Desert Travel and Tourism L.L.C.",
+      "aboutUae": "About UAE",
+      "gallery": "Gallery"
    }
-
 }

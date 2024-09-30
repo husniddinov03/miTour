@@ -2,45 +2,48 @@ import React from 'react'
 import { CarouselBox, PageNavbar } from '../../../../Components'
 import "./Style.scss"
 import advImg from './advImg'
+import { useTranslation } from 'react-i18next'
 
 
 const Attractions = () => {
-  const dataPage = [
-    {
-      id: 1,
-      text: "Adventures",
-      to: "/tourExcursions",
-      active: false
-    },
-    {
-      id: 2,
-      text: "Attractions",
-      to: "/attractions",
-      active: true
-    },
-    {
-      id: 3,
-      text: "Sightseeing",
-      to: "/sightseeing",
-      active: false
-    },
-    {
-      id: 4,
-      text: "Self Drive luxury cars",
-      to: "/selfDrive",
-      active: false
-    },
-  ]
+const {t}=useTranslation("globbal")
+
+const dataPage = [
+  {
+    id: 1,
+    text: "itemNavTour.advantures",
+    to: "/tourExcursions",
+    active: false
+  },
+  {
+    id: 2,
+    text: "itemNavTour.attractions",
+    to: "/attractions",
+    active: true
+  },
+  {
+    id: 3,
+    text: "itemNavTour.sightseeing",
+    to: "/sightseeing",
+    active: false
+  },
+  {
+    id: 4,
+    text: "itemNavTour.selfDrive",
+    to: "/selfDrive",
+    active: false
+  },
+]
 
   return (
     <div className='attractions containerElement'>
       <PageNavbar dataPage={dataPage} />
 
       <div className="attractions">
-        <h1>Attraction Tickets in Dubai</h1>
-        <p>Explore Dubai’s world-class attractions with ease through our Attraction Tickets service. Whether you're seeking adventure, culture, or relaxation, we provide tickets to all major attractions in Dubai and the UAE, ensuring a seamless experience for both luxury and budget travelers. From iconic landmarks like the Burj Khalifa, thrilling parks such as IMG Worlds of Adventure, to serene desert safaris and cultural tours, we have it all.</p>
+        <h1 className='default-title-text'>{t("attractions.title")}</h1><br />
+        <p className='default-desc-text'>{t("attractions.description")}</p>
         <div className="attractions-carousel">
-          <CarouselBox data={advImg} />
+          <CarouselBox data={advImg} slidesPerView={3} />
         </div>
       </div>
 

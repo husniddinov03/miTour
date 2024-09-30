@@ -6,28 +6,28 @@ const AboutGallery = () => {
   const dataPage = [
     {
       id: 1,
-      text: "Magical Desert Travel and Tourism L.L.C.",
+      text: "itemNavAbout.magical",
       to: "/about",
       active: false
     },
     {
       id: 2,
-      text: "About UAE",
+      text: "itemNavAbout.aboutUae",
       to: "/aboutUae",
       active: false
     },
-    {
-      id: 3,
-      text: "Gallery",
-      to: "/aboutGallery",
-      active: true
-    },
-  ]
+    // {
+    //   id: 3,
+    //   text: "itemNavAbout.gallery",
+    //   to: "/aboutGallery",
+    //   active: false,
+    //   disbled: false
+    // },
+  ];
 
   return (
     <div className='aboutUae containerElement'>
-      <PageNavbar dataPage={dataPage}/>
-    
+      <PageNavbar dataPage={dataPage} />
     </div>
   )
 }

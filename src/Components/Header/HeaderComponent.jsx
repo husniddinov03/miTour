@@ -1,9 +1,10 @@
 import React, { useTransition } from 'react'
 import "./Style.scss"
 import TitlePage from '../TitleName/TitlePage'
-import { headerBannerImage2, headerBannerImage3, MSR04060, imagePng, rightIcon } from '../image'
+import { MSR04060, imagePng, rightIcon } from '../image'
 import { useTranslation } from 'react-i18next'
-
+import advImg from "./image"
+import { CarouselBox } from '..'
 
 const HeaderComponent = () => {
 
@@ -15,28 +16,32 @@ const HeaderComponent = () => {
         <img className='mt-5' src={MSR04060} alt="No image" />
 
         <div className="text-center">
-          <h1 className='default-title-text' style={{ lineHeight: "90px", fontSize: "74px", }}>Welcome to Magical <br /> Desert
-            <b style={{ lineHeight: "90px", fontSize: "74px", fontWeight: "700", color: "#101828" }}> Travel and Tourism</b></h1>
-          <p style={{ lineHeight: "27px", fontSize: "18px", fontWeight: "500", color: "#404653" }}>Discover the wonders of the UAE with Magical Desert Travel and Tourism L.L.C.
-            We specialize in crafting <br /> unforgettable experiences that showcase the beauty,
-            culture, and adventure of the desert and beyond. </p>
+          <h1 className='default-title-text' style={{ lineHeight: "90px", fontSize: "74px", }}>{t("header.message")}</h1><br />
+          <h1 className='default-title-text' style={{ lineHeight: "90px", transform: "translateY(-30px)", fontSize: "74px", }}>{t("header.message2")}</h1><br />
+          <p style={{ lineHeight: "27px", fontSize: "18px", fontWeight: "500", color: "#404653" }}>
+            {t("header.descriptionHeader")} <br /> {t("header.descriptionHeader2")} </p>
         </div>
+        {/* Discover the wonders of the UAE with Magical Desert Travel and Tourism L.L.C.
+        We specialize in crafting */}
         <img className='header-img-one' style={{ marginTop: "100px" }} src={imagePng} alt="No image" />
       </div>
 
-      <div className="header-banner">
-        <img src={headerBannerImage2} alt="No image" />
-        <img src={headerBannerImage3} alt="No image" />
+      <div className="header-banner mb-5">
+        {/* <img src={headerBannerImage2} alt="No image" />
+        <img src={headerBannerImage3} alt="No image" /> */}
+        <CarouselBox data={advImg} slidesPerView={2} />
       </div>
+      {/* // <b style={{ lineHeight: `90px`, fontSize: `74px`, fontWeight: `700`, color: `#101828` }}> */}
+
 
       <div style={{ padding: "" }} className="header-text-section containerElement text-center">
-        <TitlePage text={"About Us"} />
+        <TitlePage textKey="header.aboutUsTitlePage" />
         <h1 style={{ fontSize: "44px" }} className='default-title-text'>
           {/* Magical Desert Travel and Tourism L.L.C. */}
-          {t("header.AboutUsTitle")}
+          {t("header.aboutUsTitle")}
         </h1>
-        <p className='default-desc-text'> Your gateway to experiencing the enchanting beauty and rich culture of the United Arab Emirates. <br /> Established with a passion for travel and a commitment to excellence, we are dedicated to providing exceptional travel <br /> experiences that are tailored to meet the unique needs and preferences of our clients.</p>
-        <button className="default-desc-text default-button">Read more <img src={rightIcon} alt="No icon" /></button>
+        <p className='default-desc-text'>{t("header.aboutUsDesc1")} <br />{t("header.aboutUsDesc2")}<br /> {t("header.aboutUsDesc3")}</p>
+        <button className="default-desc-text default-button">{t("header.aboutUsWhiteBtn")} <img src={rightIcon} alt="No icon" /></button>
       </div>
     </header>
   )

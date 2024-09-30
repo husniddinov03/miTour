@@ -2,19 +2,19 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
 // import data from './data';
-import './Style.scss'; 
+import './Style.scss';
 
 import 'swiper/css';
 import 'swiper/css/autoplay';
 
-const HomeCarousel = ({data}) => {
+const HomeCarousel = ({ data, slidesPerView = 4 }) => {
     return (
         <div className="homeCarousel containerElement">
             <Swiper
                 className='swiper'
                 modules={[Autoplay]}
                 spaceBetween={20}
-                slidesPerView={4}
+                slidesPerView={slidesPerView}
                 autoplay={{
                     delay: 3000,
                     disableOnInteraction: false,
@@ -23,7 +23,7 @@ const HomeCarousel = ({data}) => {
             >
                 {data.map(datas => (
                     <SwiperSlide key={datas.id} className="swiper-slide">
-                        <img src={datas.img} alt="No image" />
+                        <img style={{ width: data ? data.width : "100%", height: data ? data.height : "auto" }} src={datas.img} alt="No image" />
                     </SwiperSlide>
                 ))}
             </Swiper>

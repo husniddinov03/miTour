@@ -1,31 +1,30 @@
-import { ServciesIcon1, ServciesIcon2, ServciesIcon3, ServciesIcon4 } from '../image'
+import { ServciesIcon1, ServciesIcon2, ServciesIcon3, ServciesIcon4 } from '../image';
 
 const data = [
     {
         id: 1,
         icon: ServciesIcon1,
-        title: "Excursions",
-        description: "Explore the desert's vastness, historical sites, and modern marvels with our guided tours"
+        titleKey: "servicesSec.item1.title",
+        descriptionKey: "servicesSec.item1.description"
     },
     {
         id: 2,
         icon: ServciesIcon2,
-        title: "Transfers",
-        description: "Seamless and comfortable transfers to and from any location in the UAE."
+        titleKey: "servicesSec.item2.title",
+        descriptionKey: "servicesSec.item2.description"
     },
     {
         id: 3,
         icon: ServciesIcon3,
-        title: "Hotel Bookings",
-        description: "Stay at the finest hotels or find budget-friendly accommodations that suit your preferences."
+        titleKey: "servicesSec.item3.title",
+        descriptionKey: "servicesSec.item3.description"
     },
     {
         id: 4,
         icon: ServciesIcon4,
-        title: "Attraction Tickets",
-        description: "Get direct access to the UAE's most popular attractions, from theme parks to cultural landmarks."
+        titleKey: "servicesSec.item4.title",
+        descriptionKey: "servicesSec.item4.description"
     },
 ];
 
-
-export default data
+export default data;

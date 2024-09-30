@@ -1,77 +1,58 @@
-import React from 'react'
-import { PageNavbar } from '../../../../Components'
-import { image1, image2, image3, image4, image5 } from '../../../image'
-import "./Style.scss"
+import React from 'react';
+import { PageNavbar } from '../../../../Components';
+import { image1, image2, image3, image4, image5 } from '../../../image';
+import "./Style.scss";
+import { useTranslation } from 'react-i18next';
 
 const AboutUAE = () => {
-
   const dataPage = [
     {
       id: 1,
-      text: "Magical Desert Travel and Tourism L.L.C.",
+      text: "itemNavAbout.magical",
       to: "/about",
       active: false
     },
     {
       id: 2,
-      text: "About UAE",
+      text: "itemNavAbout.aboutUae",
       to: "/aboutUae",
       active: true
     },
-    {
-      id: 3,
-      text: "Gallery",
-      to: "/aboutGallery",
-      active: false
-    },
-  ]
+    // {
+    //   id: 3,
+    //   text: "itemNavAbout.gallery",
+    //   to: "/aboutGallery",
+    //   active: false,
+    //   disbled: true
+    // },
+  ];
 
   const imageData = [
-    {
-      id: 1,
-      img: image1
-    },
-    {
-      id: 2,
-      img: image2
-    },
+    { id: 1, img: image1 },
+    { id: 2, img: image2 },
+    { id: 3, img: image3 },
+    { id: 4, img: image4 },
+    { id: 5, img: image5 },
+  ];
 
-    {
-      id: 3,
-      img: image3
-    },
-
-    {
-      id: 4,
-      img: image4
-    },
-    {
-      id: 5,
-      img: image5
-    },
-
-  ]
+  const { t } = useTranslation("globbal"); // Corrected usage
 
   return (
     <div className='aboutUae containerElement'>
       <PageNavbar dataPage={dataPage} />
-
       <div className="aboutUae-box">
         <br />
-        <h1 className='default-title-text'>Welcome to the United Arab Emirates</h1><br />
-        <p className='default-desc-text'>A captivating blend of ancient history and cutting-edge modernity. Formed in 1971, the UAE has grown from a group of small desert communities into a global hub of innovation and luxury.
-          <br />
-          The country’s seven emirates—Abu Dhabi, Dubai, Sharjah, Ajman, Umm Al Quwain, Ras Al Khaimah, and Fujairah—each offer their own unique experiences, from the towering skyscrapers of Dubai to the cultural treasures of Sharjah and the natural beauty of Fujairah's mountains and beaches. Discover the rich heritage, vibrant traditions, and endless adventures that make the UAE a world-class destination.</p>
+        <h1 className='default-title-text'>{t("aboutUae.title")}</h1><br />
+        <p className='default-desc-text'>{t("aboutUae.description1")} {t("aboutUae.description2")}</p>
         <div className="aboutUae-images">
-          {
-            imageData.map(datas => (
-              <img key={datas.id} src={datas.img} alt="No image" />
-            ))
-          }
+          {imageData.map(data => (
+            <img key={data.id} src={data.img} alt="No image" />
+          ))}
         </div>
       </div>
+      <br /><br />
     </div>
-  )
+  );
 }
 
-export default AboutUAE
+export default AboutUAE;

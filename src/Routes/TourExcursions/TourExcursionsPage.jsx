@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useTransition } from 'react';
 import { PageNavbar } from '../../Components';
 import "./Style.scss";
 import advImg from './advImg'; // TourExcursions rasmlari
@@ -6,13 +6,34 @@ import data from './data';
 import CardPage from '../../Components/PageCard/CardPage';
 
 const TourExcursionsPage = () => {
-  const dataPage = [
-    { id: 1, text: "Adventures", to: "/tourExcursions", active: true },
-    { id: 2, text: "Attractions", to: "/attractions", active: false },
-    { id: 3, text: "Sightseeing", to: "/sightseeing", active: false },
-    { id: 4, text: "Self Drive luxury cars", to: "/selfDrive", active: false },
-  ];
 
+  const { t } = useTransition("globbal")
+  const dataPage = [
+    {
+      id: 1,
+      text: "itemNavTour.advantures",
+      to: "/tourExcursions",
+      active: true
+    },
+    {
+      id: 2,
+      text: "itemNavTour.attractions",
+      to: "/attractions",
+      active: false
+    },
+    {
+      id: 3,
+      text: "itemNavTour.sightseeing",
+      to: "/sightseeing",
+      active: false
+    },
+    {
+      id: 4,
+      text: "itemNavTour.selfDrive",
+      to: "/selfDrive",
+      active: false
+    },
+  ]
   return (
     <div className='tourExcursions containerElement'>
       <PageNavbar dataPage={dataPage} />

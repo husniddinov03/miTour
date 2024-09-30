@@ -1,6 +1,6 @@
 .homeCarousel {
     text-align: center;
-    margin-top: 150px;
+    // margin-top: 150px;
 
     .default-title-text {
         font-size: 44px;
@@ -17,10 +17,10 @@
         align-items: center;
         background: #fff;
         
-        img {
-            width: 100%;
-            height: auto; // Maintain aspect ratio
-        }
+        // img {
+        //     width: 100%;
+        //     height: auto;
+        // }
     }
 
     // Responsive styles

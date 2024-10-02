@@ -18,13 +18,13 @@ const AboutUAE = () => {
       to: "/aboutUae",
       active: true
     },
-    // {
-    //   id: 3,
-    //   text: "itemNavAbout.gallery",
-    //   to: "/aboutGallery",
-    //   active: false,
-    //   disbled: true
-    // },
+    {
+      id: 3,
+      text: "itemNavAbout.gallery",
+      to: "/aboutGallery",
+      active: false,
+      disabled: true
+    },
   ];
 
   const imageData = [
@@ -50,7 +50,7 @@ const AboutUAE = () => {
           ))}
         </div>
       </div>
-      <br /><br />
+      <br /><br /><br />
     </div>
   );
 }

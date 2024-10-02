@@ -39,12 +39,28 @@
         }
     }
 
-    .default-button {
-        margin-top: 5rem;
-        margin: auto;
-        display: block;
-        border: none;
+    .services-btns {
+        align-items: end;
+        gap: 16px;
+
+        .default-button {
+            // margin-top: 5rem;
+            // margin: auto;
+            border: none;
+        }
+
+        .servicesComp-link {
+            background: #101828;
+            color: #FFFFFF;
+            padding: 12px 20px;
+            border-radius: 18px;
+            font-weight: 500;
+            display: flex;
+            gap: 5px;
+        }
+
     }
+
 }
 
 /* Responsive styles */

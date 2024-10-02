@@ -20,13 +20,13 @@ const About = () => {
       to: "/aboutUae",
       active: false
     },
-    // {
-    //   id: 3,
-    //   text: "itemNavAbout.gallery",
-    //   to: "/aboutGallery",
-    //   active: false,
-    //   disbled: true
-    // },
+    {
+      id: 3,
+      text: "itemNavAbout.gallery",
+      to: "/aboutGallery",
+      active: false,
+      disabled: true
+    },
   ];
 
   return (
@@ -80,7 +80,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <br /><br />
+      <br /><br /><br />
     </div>
   );
 }

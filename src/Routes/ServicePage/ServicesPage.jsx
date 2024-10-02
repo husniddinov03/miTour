@@ -8,13 +8,11 @@ import { useTranslation } from 'react-i18next'; // Assuming you want translation
 
 const ServicesPage = () => {
   const { t } = useTranslation("globbal"); 
-
+   
   return (
     <div className='servicesPage containerElement'>
-      <div className="servicesTitle flex-element gap-3 mt-5">
-        <h1 style={{ fontSize: "34px" }} className='default-title-text pt-5'>{t("servicesSec.title")}</h1>
-        <TitlePage textKey="servicesSec.titleRight" />
-      </div>
+      {/* <div className="servicesTitle flex-element gap-3">
+      </div> */}
       
       <div className="servicePage-box d-flex flex-wrap mt-5 gap-4">
         {data.map((datas) => (
@@ -22,10 +20,11 @@ const ServicesPage = () => {
         ))}
       </div>
 
-      <button className='default-title-text default-button mt-5 m-auto'>
+<br /><br />
+      {/* <button className='default-title-text default-button mt-5 m-auto'>
         {t("servicesSec.servicePageBtn")} 
         <img src={rightIcon} alt="No icon" /> 
-      </button>
+      </button> */}
     </div>
   );
 }

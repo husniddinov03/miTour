@@ -42,6 +42,8 @@ const TourExcursionsPage = () => {
           <CardPage key={item.id} item={item} advImg={advImg} /> // TourExcursions rasmlari
         ))}
       </div>
+      <br /><br /><br />
+
     </div>
   );
 };

@@ -1,8 +1,10 @@
 .pageNavbar{
 
     .about-links {
-        margin-top: 30px;
-        margin-bottom: 30px;
+        // margin-top: 30px;
+        // margin-bottom: 30px;
+
+        margin: 30px 0 30px 0;
         gap: 8px;
         
     .about-link {
@@ -11,10 +13,11 @@
         border-radius: 16px;
         color: #70747E;
         
-        &:hover {
-            background: #F2F4F7;
-            color: #101828;
-        }
+        // &:hover {
+        //     background: #F2F4F7;
+        //     // color: #101828;
+        //     color: #70747E;
+        // }
     }
 }
 }

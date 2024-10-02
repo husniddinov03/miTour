@@ -213,5 +213,17 @@
       "magical": "Волшебная Пустыня Путешествия и Туризма Л.Л.К.",
       "aboutUae": "О ОАЭ",
       "gallery": "Галерея"
+   },
+
+   "footer": {
+      "title": "Контактная информация",
+      "item1": "Телефон: +971581694135",
+      "item2": "Здание Дубая, район Хор Аль Анз, офис AL MANSOORI номер 144",
+      "item3": "www.magical-deserts.com",
+      "item4": "Operations@magical-desert.com"
+   },
+
+   "bags": {
+      "book": "Забронируйте сейчас"
    }
 }

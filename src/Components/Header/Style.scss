@@ -4,11 +4,26 @@ header {
         justify-content: space-between;
         align-items: center;
 
-        img {
-            width: 88px;
-            height: 88px;
+        .header-left-img {
+            // padding-top: 10px;
+            background: white;
+            box-shadow: 0px 44px 54px 0px #25373F29;
+            
+            // border: 2px solid;
+            border: 5px solid #FFFFFF;
+                        // padding: 0 0 4px 4px;
             border-radius: 50px;
-            box-shadow: 0px 14px 54px 0px #25373f98;
+
+            img {
+                width: 88px;
+                height: 88px;
+                border-radius: 50px;
+                // box-shadow: 0px 14px 54px 0px #25373f98;
+            }
+
+            // .header-img-one {
+            //     margin-top: 10px;
+            // }
         }
 
         h1 {
@@ -21,9 +36,7 @@ header {
             line-height: 27px;
         }
 
-        .header-img-one {
-            margin-top: 100px;
-        }
+
     }
 
     .header-banner {
@@ -43,7 +56,7 @@ header {
         flex-direction: column;
         gap: 10px;
         align-items: center;
-        margin-top: 100px;
+        // margin-top: 100px;
         padding: 100px 340px 100px 340px;
         box-shadow: 0px 0px 54px 0px #25373F14;
 
@@ -59,9 +72,32 @@ header {
             font-weight: 500;
         }
 
-        .default-button {
-            margin-top: 20px;
-            border: none;
+        .header-text-btns {
+            display: flex;
+            align-items: end;
+            justify-content: space-between;
+            gap: 16px;
+
+            .default-button {
+                margin-top: 20px;
+                border: none;
+                color: #101828;
+                font-weight: 500;
+            }
+
+            .header-text-link {
+                // width: 160px;
+                // height: 60px;
+                padding: 12px 25px;
+                border-radius: 18px;
+                display: flex;
+                gap: 10px;
+                font-weight: 500;
+                background: #101828;
+                color: #FFFFFF;
+                // align-items: center;
+                // justify-content: center;
+            }
         }
     }
 }
@@ -71,6 +107,7 @@ header {
         .header-box {
             flex-direction: column;
             align-items: center;
+
             img {
                 width: 70px;
                 height: 70px;
@@ -86,13 +123,14 @@ header {
                 line-height: 24px;
             }
 
-            .header-img-one {
-                margin-top: 50px;
-            }
+            // .header-img-one {
+            //     margin-top: 50px;
+            // }
         }
 
         .header-banner {
             flex-direction: column;
+
             img {
                 width: 100%;
                 height: auto;
@@ -102,9 +140,11 @@ header {
 
         .header-text-section {
             padding: 80px 100px;
+
             h1 {
                 font-size: 36px;
             }
+
             p {
                 font-size: 16px;
                 line-height: 22px;
@@ -141,6 +181,7 @@ header {
 
         .header-text-section {
             padding: 40px 50px;
+
             h1 {
                 font-size: 28px;
                 line-height: 38px;
@@ -185,6 +226,7 @@ header {
 
         .header-text-section {
             padding: 20px 20px;
+
             h1 {
                 font-size: 24px;
                 line-height: 30px;

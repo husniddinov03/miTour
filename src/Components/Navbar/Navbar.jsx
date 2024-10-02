@@ -44,7 +44,7 @@ const Navbar = () => {
                     </NavLink>
                 </div>
                 <br />
-                <button className='nav-top-btn default-title-text'>{t('navbar.topBtn')}</button>
+                <Link className='nav-top-btn default-title-text' to='https://web.whatsapp.com/'>{t('navbar.topBtn')}</Link>
                 <br />
                 <div className="nav-lang">
                     <button className={changeLanguage === "Eng" ? "lang-button active" : "lang-button"} onClick={() => handleChangeLanguage("eng", "Eng")}>Eng</button>

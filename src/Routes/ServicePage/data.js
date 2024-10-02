@@ -1,11 +1,11 @@
-import { 
-    ServicePageIcon1, 
-    ServicePageIcon2, 
-    ServicePageIcon3, 
-    ServicePageIcon4, 
-    ServicePageIcon5, 
+import {
+    ServicePageIcon1,
+    ServicePageIcon2,
+    ServicePageIcon3,
+    ServicePageIcon4,
+    ServicePageIcon5,
     ServicePageIcon6,
-    ServicePageIcon7 
+    ServicePageIcon7
 } from "../image";
 
 const data = [
@@ -25,14 +25,14 @@ const data = [
     },
     {
         id: 3,
-        icon: ServicePageIcon3,
+        icon: ServicePageIcon7,
         title: "servicesPage.item3.title",
         description: "servicesPage.item3.description",
         bottomText: "servicesPage.item3.bottomText",
     },
     {
         id: 4,
-        icon: ServicePageIcon4,
+        icon: ServicePageIcon6,
         title: "servicesPage.item4.title",
         description: "servicesPage.item4.description",
         bottomText: "servicesPage.item4.bottomText",
@@ -46,14 +46,14 @@ const data = [
     },
     {
         id: 6,
-        icon: ServicePageIcon6,
+        icon: ServicePageIcon4,
         title: "servicesPage.item6.title",
         description: "servicesPage.item6.description",
         bottomText: "servicesPage.item6.bottomText",
     },
     {
         id: 7,
-        icon: ServicePageIcon7,
+        icon: ServicePageIcon3,
         title: "servicesPage.item7.title",
         description: "servicesPage.item7.description",
         bottomText: "servicesPage.item7.bottomText",

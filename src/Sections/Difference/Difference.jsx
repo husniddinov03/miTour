@@ -9,9 +9,9 @@ const Difference = () => {
 
     return (
         <div className='difference containerElement mt-5'>
-            <div className="text-center">
+            <div >
                 <TitlePage textKey={t("difference.titleRight")} boolean={false} />
-                <h1>{t("difference.title")}</h1>
+                <h1 style={{font: "700"}}>{t("difference.title")}</h1>
             </div>
 
             <div className="difference-box">

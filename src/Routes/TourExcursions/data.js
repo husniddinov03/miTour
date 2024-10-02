@@ -3,7 +3,7 @@ const data = [
         id: 1,
         title: "advantures.item1.title",
         descriptions: "advantures.item1.description",
-        btnBoolean: true,
+        btnBoolean: false,
         part: "one"
     },
     {

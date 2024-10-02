@@ -1,13 +1,38 @@
-.servicePage{
-    width: 1632px;
-    .servicePage-box{
+.servicesPage {
+    width: 1620px; /* O'lchovlarni 100% ga o'zgartirdim */
+    padding: 20px; /* Umumiy padding qo'shildi */
+
+    .servicesTitle {
         display: flex;
-        h1{
-            font-size: 24px;
+        justify-content: center; /* Markazga joylashish */
+        margin-top: 20px; /* Yuqoridan bo'sh joy */
+        
+        h1 {
+            font-size: 34px; /* Katta ekranlar uchun */
+            text-align: center;
+        }
+    }   
+
+    .servicePage-box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-center; /* Joylashishni yaxshilash */
+        // margin-top: 20px; /* Yuqoridan bo'sh joy */
+        gap: 20px; /* Elementlar orasidagi bo'sh joy */
+        
+        @media (max-width: 1920px) {
+            gap: 30px; /* Katta ekranlar uchun bo'sh joy */
         }
 
-        // .servicePage-item{
+        @media (max-width: 852px) {
+            justify-content: center; /* O'rta ekranlar uchun markazga joylashish */
+            gap: 15px; /* Bo'sh joyni kichraytirish */
+        }
 
-        // }
+        @media (max-width: 390px) {
+            flex-direction: column; /* Kichik ekranlar uchun vertikal joylashish */
+            align-items: center; /* Markazga joylashish */
+            gap: 10px; /* Kichik ekranlar uchun bo'sh joy */
+        }
     }
 }

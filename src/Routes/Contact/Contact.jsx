@@ -2,6 +2,7 @@ import React from 'react'
 import { TelephoneIcon, MessageIcon, webIcon, WhatsappIcon } from "../icon"
 import "./Style.scss"
 import { useTranslation } from 'react-i18next'
+import { Link } from 'react-router-dom'
 
 const Contact = () => {
 
@@ -25,7 +26,7 @@ const Contact = () => {
           <h1>{t("contact.adressTitle")}</h1>
           <p className='default-desc-text'>{t("contact.adress")}</p>
         </div>
-        <button><img src={WhatsappIcon} alt="No icon" />Whatsapp</button>
+        <Link className='contact-link' to='https://web.whatsapp.com/'><img src={WhatsappIcon} alt="No icon" />Whatsapp</Link>
       </div>
     </div>
   )

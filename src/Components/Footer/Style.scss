@@ -1,0 +1,107 @@
+.footer {
+    width: 100%; /* O'lchovlarni 100% ga o'zgartirdim */
+    background: #101828;
+    padding: 40px 154px;
+
+    .footer-box {
+        color: white;
+        justify-content: space-between;
+        gap: 98px;
+
+        .footer-items {
+            h1 {
+                color: white;
+                font-size: 24px;
+                font-weight: 700;
+            }
+
+            .footer-items-ich {
+                width: 777px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                gap: 12px;
+
+                b {
+                    font-size: 16px;
+                    color: white;
+                }
+            }
+
+            .footer-item {
+                display: flex;
+                align-items: center;
+            }
+
+            .footer-bottom-link {
+                border-radius: 12px;
+                width: 252px;
+                height: 58px;
+                margin-top: 15px;
+                display: flex;
+                gap: 12px;
+                background: #1D2939;
+                font-weight: 700;
+                color: #FFFFFF;
+            }
+        }
+    }
+
+    @media (max-width: 1920px) {
+        padding: 40px 80px; /* Katta ekranlar uchun */
+        
+        .footer-box {
+            gap: 50px; /* Katta ekranlar uchun */
+        }
+    }
+
+    @media (max-width: 852px) {
+        padding: 20px 40px; /* O'rta ekranlar uchun */
+        
+        .footer-box {
+            flex-direction: column; /* Vertikal joylashish */
+            align-items: center; /* Markazga joylashish */
+            gap: 30px; /* O'rta ekranlar uchun */
+        }
+
+        .footer-items {
+            text-align: center; /* Matnni markazga joylashish */
+            h1 {
+                font-size: 20px; /* O'rta ekranlar uchun */
+            }
+
+            .footer-items-ich {
+                width: 100%; /* Kichik ekranlar uchun */
+                justify-content: center; /* Markazga joylashish */
+            }
+
+            .footer-bottom-link {
+                width: 100%; /* Kichik ekranlar uchun */
+            }
+        }
+    }
+
+    @media (max-width: 352px) {
+        padding: 10px 20px; /* Kichik ekranlar uchun */
+        
+        .footer-box {
+            gap: 20px; /* Kichik ekranlar uchun */
+        }
+
+        .footer-items {
+            h1 {
+                font-size: 18px; /* Kichik ekranlar uchun */
+            }
+
+            .footer-items-ich {
+                flex-direction: column; /* Kichik ekranlar uchun */
+                align-items: center; /* Markazga joylashish */
+            }
+
+            .footer-bottom-link {
+                width: 100%; /* Kichik ekranlar uchun */
+                font-size: 14px; /* Kichik ekranlar uchun */
+            }
+        }
+    }
+}

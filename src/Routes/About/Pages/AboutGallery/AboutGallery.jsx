@@ -2,8 +2,8 @@ import React from 'react'
 import { PageNavbar } from '../../../../Components'
 
 const AboutGallery = () => {
-
   const dataPage = [
+  
     {
       id: 1,
       text: "itemNavAbout.magical",
@@ -16,13 +16,13 @@ const AboutGallery = () => {
       to: "/aboutUae",
       active: false
     },
-    // {
-    //   id: 3,
-    //   text: "itemNavAbout.gallery",
-    //   to: "/aboutGallery",
-    //   active: false,
-    //   disbled: false
-    // },
+    {
+      id: 3,
+      text: "itemNavAbout.gallery",
+      to: "/aboutGallery",
+      active: false,
+      disabled: true
+    },
   ];
 
   return (

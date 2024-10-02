@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import { InfoIcon } from '../../Routes/icon';
 
 const CardService = ({ data }) => {
   const { t } = useTranslation("globbal"); 
@@ -12,16 +13,18 @@ const CardService = ({ data }) => {
   };
 
   return (
-    <div className="servicePage-item d-flex flex-column align-items-start gap-2" style={style}>
+    <div className="servicePage-item d-flex flex-column align-items-start justify-content-between gap-2" style={style}>
       <img src={data.icon} alt="No image" />
       <h1 style={{ fontSize: "24px", marginTop: "10px" }} className='default-title-text'>
         {t(data.title)}
       </h1>
       <p className='default-desc-text'>{t(data.description)}</p>
+      
       {data.bottomText && (
-        <div style={{ background: "#F5F5F5", width: "100%", padding: "6px 10px", borderRadius: "20px" }} className="servicePage-bottom-text">
-          <strong style={{ fontSize: "25px", color: "white", padding: "0px 10px", borderRadius: "50%", background: "#4F73F2" }}>!</strong>
-          <b className='default-desc-text' style={{ color: "#101828", marginLeft: "5px" }}>{data.bottomText}</b>
+        <div style={{ background: "#F5F5F5", padding: "9px 10px", borderRadius: "20px", width: "100%",  }} className="servicePage-bottom-text">
+          <img src={InfoIcon} style={{borderRadius: "50%" }}/>
+
+          <b className='default-desc-text' style={{ color: "#101828", marginLeft: "5px",  }}>{t(data.bottomText)}</b>
         </div>
       )}
     </div>

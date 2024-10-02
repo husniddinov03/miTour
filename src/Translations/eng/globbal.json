@@ -213,5 +213,15 @@
       "magical": "Magical Desert Travel and Tourism L.L.C.",
       "aboutUae": "About UAE",
       "gallery": "Gallery"
+   },
+   "footer": {
+      "title": "Contact info",
+      "item1": "Phone: +971581694135",
+      "item2": "Building Dubai, Area Hor Al Anz, AL MANSOORI Office Number 144",
+      "item3": "www.magical-deserts.com",
+      "item4": "Operations@magical-desert.com"
+   },
+   "bags": {
+      "book": "Book now"
    }
 }

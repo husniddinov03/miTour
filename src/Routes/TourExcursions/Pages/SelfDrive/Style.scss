@@ -30,6 +30,13 @@
     .selfDrive-serviceData {
         display: flex;
         flex-wrap: wrap;
-        gap: 20px;margin-top: 30px;
+        gap: 20px;
+        margin-top: 30px;
+
+        @media (max-width: 550px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
     }
 }

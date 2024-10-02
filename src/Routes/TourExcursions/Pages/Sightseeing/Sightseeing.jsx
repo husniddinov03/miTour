@@ -46,6 +46,7 @@ const Sightseeing = () => {
           ))
         }
       </div>
+      <br /><br /><br />
     </div>
   )
 }

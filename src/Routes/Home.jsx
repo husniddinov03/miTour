@@ -12,7 +12,7 @@ const Home = () => {
       <Services />
       <Difference />
       {/* <HomeCarousel /> */}
-      <br />
+      <br /><br /><br />
 <Footer/>
     </div>
   );

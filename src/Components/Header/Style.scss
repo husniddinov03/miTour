@@ -8,10 +8,10 @@ header {
             // padding-top: 10px;
             background: white;
             box-shadow: 0px 44px 54px 0px #25373F29;
-            
+
             // border: 2px solid;
             border: 5px solid #FFFFFF;
-                        // padding: 0 0 4px 4px;
+            // padding: 0 0 4px 4px;
             border-radius: 50px;
 
             img {
@@ -104,6 +104,8 @@ header {
 
 @media (max-width: 768px) {
     header {
+        width: 100%;
+
         .header-box {
             flex-direction: column;
             align-items: center;
@@ -121,6 +123,14 @@ header {
             p {
                 font-size: 16px;
                 line-height: 24px;
+            }
+
+            .header-left-img {
+                margin-bottom: 20px;
+
+                .header-img-one {
+                    margin-top: 20px;
+                }
             }
 
             // .header-img-one {

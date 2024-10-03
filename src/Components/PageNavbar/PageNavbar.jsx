@@ -9,6 +9,7 @@ const PageNavbar = ({ dataPage }) => {
     return (
         <div className='pageNavbar'>
             <div className="about-links flex-element">
+             
                 {
                     dataPage.map(datas => (
                         datas.disabled ? 

@@ -1,5 +1,6 @@
 .nav {
     width: 1610px;
+    // width: 100%;
     margin: auto;
     background: #101828;
     border-radius: 20px;
@@ -129,6 +130,7 @@
     }
 
     @media (max-width: 480px) {
+        // width: 480px;
         .nav-box {
             .logo img {
                 width: 150px;

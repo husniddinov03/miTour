@@ -11,7 +11,8 @@ const Difference = () => {
         <div className='difference containerElement mt-5'>
             <div >
                 <TitlePage textKey={t("difference.titleRight")} boolean={false} />
-                <h1 style={{font: "700"}}>{t("difference.title")}</h1>
+                <br />
+                <h1 className='difference-' style={{ fontWeight: "700" }}>{t("difference.title")}</h1>
             </div>
 
             <div className="difference-box">

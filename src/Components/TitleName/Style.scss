@@ -1,0 +1,22 @@
+.titlePage {
+    display: flex;
+    margin-top: 20px;
+  
+    .text-left {
+      padding: 8px 24px;
+      border-radius: 19px;
+      background: #EDFD1E;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+    }
+  
+    @media (max-width: 400px) {
+      justify-content: center !important; // Ensure centering for small screens
+  
+.title-h2{
+    text-align: center;
+}
+    }
+  }
+  

@@ -16,7 +16,7 @@ const HeaderComponent = () => {
     <header className='header containerElement mt-5'>
       <div className="header-box">
         <div className="header-left-img mt-5 ">
-          <img style={{transform: "rotate(9.75 deg)"}} src={MSR04060} alt="No image" />
+          <img className='header-img1' style={{ transform: "rotate(9.75 deg)" }} src={MSR04060} alt="No image" />
         </div>
 
         <div className="text-center">
@@ -27,11 +27,11 @@ const HeaderComponent = () => {
         </div>
 
         <div className="header-left-img">
-          <img style={{transform: "rotate(-0.97 deg)"}} className='header-img-one'  src={imagePng} alt="No image" />
+          <img style={{ transform: "rotate(-0.97 deg)" }} className='header-img-one' src={imagePng} alt="No image" />
         </div>
       </div>
 
-      <div className="header-banner mb-5">
+      <div className="header-banner">
         <CarouselBox data={advImg} slidesPerView={2} />
       </div>
 

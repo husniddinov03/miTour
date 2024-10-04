@@ -37,9 +37,10 @@
 
             .footer-bottom-link {
                 border-radius: 12px;
-                // width: 252px;
+                width: 252px;
                 height: 58px;
                 margin-top: 15px;
+                padding: 20px;
                 display: flex;
                 gap: 12px;
                 background: #1D2939;
@@ -90,7 +91,7 @@
         }
     }
 
-    @media (max-width: 400px) {
+    @media (max-width: 425px) {
 
         .footer-box {
             padding: 0 20px;

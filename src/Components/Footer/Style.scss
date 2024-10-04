@@ -18,7 +18,7 @@
             }
 
             .footer-items-ich {
-                width: 777px;
+                // width: 777px;
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: space-between;
@@ -37,7 +37,7 @@
 
             .footer-bottom-link {
                 border-radius: 12px;
-                width: 252px;
+                // width: 252px;
                 height: 58px;
                 margin-top: 15px;
                 display: flex;
@@ -90,12 +90,7 @@
         }
     }
 
-    /* 352px and below (small mobile devices) */
-    @media (max-width: 376px) {
-        // padding: 10px 20px;
-        // padding: 50px;
-
-
+    @media (max-width: 400px) {
 
         .footer-box {
             padding: 0 20px;

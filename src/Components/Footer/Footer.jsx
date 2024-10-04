@@ -11,8 +11,8 @@ const Footer = () => {
     const { t } = useTranslation("globbal")
 
     return (
-        <footer className='footer containerElement'>
-            <div className="footer-box flex-element">
+        <footer className='footer '>
+            <div className="footer-box flex-element containerElement">
                 <img src={logo} alt="No icon" className="footer-logo" />
 
                 <div style={{ gap: "16px" }} className="footer-items d-flex flex-column">

@@ -23,7 +23,7 @@ const HomeCarousel = ({ data, slidesPerView = 4 }) => {
             >
                 {data.map(datas => (
                     <SwiperSlide key={datas.id} className="swiper-slide">
-                        <img style={{ width: data ? data.width : "100%", height: data ? data.height : "auto" }} src={datas.img} alt="No image" />
+                        <img style={{ width: data? data.width : "100%", height: data ? data.height : "auto" }} src={datas.img} alt="No image" />
                     </SwiperSlide>
                 ))}
             </Swiper>

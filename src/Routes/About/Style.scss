@@ -1,5 +1,5 @@
 .about {
-    width: 1320px !important;
+    // width: 1320px ;
     margin: auto;
 
     .about-links {
@@ -8,7 +8,7 @@
         gap: 8px;
 
         .about-link {
-            padding: 16px;
+            // padding: 16px;
             background: transparent;
             border-radius: 16px;
             color: #70747E;
@@ -91,6 +91,16 @@
                     font-size: 47px;
                     color: #CACCD2;
                 }
+            }
+        }
+    }
+
+
+    @media (max-width: 400px) {
+        .about-box1{
+            .about-items{
+                display: flex;
+                flex-direction: column;
             }
         }
     }

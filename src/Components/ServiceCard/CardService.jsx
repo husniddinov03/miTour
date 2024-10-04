@@ -1,12 +1,13 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { InfoIcon } from '../../Routes/icon';
+import "./Style.scss"
 
 const CardService = ({ data }) => {
   const { t } = useTranslation("globbal"); 
 
   const style = {
-    width: data.width || "48%",
+    width: data.width ,
     padding: "20px",
     boxShadow: "0px 0px 54px 0px #25373F14",
     borderRadius: "20px",

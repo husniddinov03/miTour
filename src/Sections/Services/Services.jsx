@@ -17,10 +17,11 @@ const Services = () => {
         <h1 style={{ fontSize: "44px" }} className='default-title-text pt-5'>{t("servicesSec.title")}</h1>
         <TitlePage textKey="servicesSec.titleRight" boolean={true} FontSize="44px" padding="5px 17px"/>
       </div>
-      <div id={uuid} style={{ display: "flex", marginTop: "100px", gap: "25px", flexWrap: "wrap", margin: "30px" }} className="servicesBox">
+
+      <div id={uuid} style={{ display: "flex", marginTop: "100px", margin: "30px" }} className="servicesBox">
         {data.map((datas) => (
           <div key={datas.id} className="services-item" style={{
-            width: "750px", height: "230px", padding: "40px", boxShadow: "0px 0px 54px 0px #25373F14", borderRadius: "20px"
+          height: "230px", padding: "40px", boxShadow: "0px 0px 54px 0px #25373F14", borderRadius: "20px"
           }}>
             <img src={datas.icon} alt="No icon" />
             <h3 style={{ fontSize: "24px" }} className='default-title-text'>{t(datas.titleKey)}</h3>

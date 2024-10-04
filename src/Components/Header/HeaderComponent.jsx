@@ -42,8 +42,7 @@ const HeaderComponent = () => {
         </h1>
         <p className='default-desc-text'>{t("header.aboutUsDesc1")} <br />{t("header.aboutUsDesc2")}<br /> {t("header.aboutUsDesc3")}</p>
         <div className="header-text-btns">
-          <button className="default-desc-text default-button">{t("header.aboutUsWhiteBtn")}
-          </button>
+          <button className="default-desc-text default-button">{t("header.aboutUsWhiteBtn")}</button>
           <Link className='header-text-link default-desc-text' to='/contact'>
             {t("navbar.contact")}
             <img src={WhiteTelephoneIcon} alt="No icon" />

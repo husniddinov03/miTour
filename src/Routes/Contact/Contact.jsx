@@ -28,6 +28,10 @@ const Contact = () => {
         </div>
         <Link className='contact-link' to='https://web.whatsapp.com/'><img src={WhatsappIcon} alt="No icon" />Whatsapp</Link>
       </div>
+
+        <br /><br /><br />
+      <div style={{height: "200px", background: "transparent"}} className=""></div>
+      
     </div>
   )
 }

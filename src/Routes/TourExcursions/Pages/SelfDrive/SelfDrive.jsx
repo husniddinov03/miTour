@@ -46,10 +46,11 @@ const SelfDrive = () => {
       {
         data.map(datas => (
           <div key={datas.id} className="selfDrive-box d-flex flex-column">
-           
+
             <h2 className='default-title-text'>{t(datas.title)}</h2>
             <br />
             <div className="selfDrive-items flex-column">
+              
               <div className="selfDrive-item">
                 <img src={TableIcon} alt="No image" /><b className='default-title-text'> {t("selfDrive.durationText")}</b><p className='default-desc-text'>{t(datas.duration)}</p>
 
@@ -66,10 +67,12 @@ const SelfDrive = () => {
         ))
 
       }
-      <div className="selfDrive-img">
+      <div className="selfDrive-imgs">
         {
           advImg.map(img => (
+            <div className="selfDrive-img">  
             <img key={img.id} src={img.img} alt="No image" />
+            </div>
           ))
         }
       </div>

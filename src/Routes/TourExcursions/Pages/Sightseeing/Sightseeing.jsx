@@ -6,6 +6,7 @@ import "./Style.scss"
 import CardPage from '../../../../Components/PageCard/CardPage'
 
 const Sightseeing = () => {
+  
   const dataPage = [
     {
       id: 1,

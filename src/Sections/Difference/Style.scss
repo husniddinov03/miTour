@@ -1,4 +1,5 @@
 .difference {
+
     /* Container styles */
     .text-center {
         display: flex;
@@ -86,10 +87,11 @@
 }
 
 /* 425px and below */
-@media (max-width: 425px) { 
-    
+@media (max-width: 425px) {
+
     .difference {
         text-align: center;
+
         .text-center {
             h1 {
                 font-size: 20px;
@@ -124,36 +126,41 @@
     }
 }
 
-// /* 320px and below */
-// @media (max-width: 320px) {
-//     .difference {
-//         .text-center {
-//             h1 {
-//                 font-size: 18px;
-//                 margin-top: 5px;
-//             }
-//         }
+/* 320px and below */
+@media (max-width: 376px) {
+    .difference {
+        .text-center {
+            h1 {
+                font-size: 18px;
+                margin-top: 5px;
+            }
+        }
 
-//         .difference-box {
-//             align-items: center;
-//             gap: 10px;
+        .difference-box {
+            align-items: center;
+            gap: 10px;
 
-//             .difference-item {
-//                 width: 100%;
-//                 padding: 10px;
+            .difference-item {
+                width: 100%;
+                padding: 10px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
 
-//                 h2 {
-//                     font-size: 18px;
-//                 }
+                h2 {
+                    font-size: 18px;
+                }
 
-//                 p {
-//                     font-size: 12px;
-//                 }
+                p {
+                    font-size: 12px;
+                }
 
-//                 img {
-//                     margin-top: 0;
-//                 }
-//             }
-//         }
-//     }
-// }
+                img {
+                    // margin-top: 0;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}

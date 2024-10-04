@@ -44,9 +44,12 @@ const AboutUAE = () => {
         <br />
         <h1 className='default-title-text'>{t("aboutUae.title")}</h1><br />
         <p className='default-desc-text'>{t("aboutUae.description1")} {t("aboutUae.description2")}</p>
+
         <div className="aboutUae-images">
           {imageData.map(data => (
-            <img key={data.id} src={data.img} alt="No image" />
+            <div className="aboutUaeImg">
+              <img key={data.id} src={data.img} alt="No image" />
+            </div>
           ))}
         </div>
       </div>

@@ -1,5 +1,5 @@
 .servicesPage {
-    width: 1620px; /* O'lchovlarni 100% ga o'zgartirdim */
+    // width: 1620px; /* O'lchovlarni 100% ga o'zgartirdim */
     padding: 20px; /* Umumiy padding qo'shildi */
 
     .servicesTitle {
@@ -30,6 +30,7 @@
         }
 
         @media (max-width: 390px) {
+          
             flex-direction: column; /* Kichik ekranlar uchun vertikal joylashish */
             align-items: center; /* Markazga joylashish */
             gap: 10px; /* Kichik ekranlar uchun bo'sh joy */

@@ -19,7 +19,7 @@ const CardPage = ({ item, advImg }) => {
       <div className="card-page-images">
 
         {images?.map(filteredImg => (
-          <img key={filteredImg?.id} src={filteredImg?.img} />
+            <img key={filteredImg?.id} src={filteredImg?.img} />
         ))}
       </div>
     </div>

@@ -10,7 +10,7 @@ const Difference = () => {
     return (
         <div className='difference containerElement mt-5'>
             <div >
-                <TitlePage textKey={t("difference.titleRight")} boolean={false} />
+                <TitlePage textKey={t("difference.titleRight")} boolean={false} FontSize={false} padding={false} margin="40px 0 0 0"/>
                 <br />
                 <h1 className='difference-' style={{ fontWeight: "700" }}>{t("difference.title")}</h1>
             </div>

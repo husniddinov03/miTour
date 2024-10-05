@@ -8,7 +8,7 @@ const PageNavbar = ({ dataPage }) => {
 
     return (
         <div className='pageNavbar'>
-            <div className="about-links flex-element">
+            <div className="about-links flex-element flex-wrap">
              
                 {
                     dataPage.map(datas => (

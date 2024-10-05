@@ -19,10 +19,10 @@ const HeaderComponent = () => {
           <img className='header-img1' style={{ transform: "rotate(9.75 deg)" }} src={MSR04060} alt="No image" />
         </div>
 
-        <div className="text-center">
-          <h1 className='default-title-text' style={{ lineHeight: "90px", fontSize: "74px", }}>{t("header.message")}</h1><br />
-          <h1 className='default-title-text' style={{ lineHeight: "90px", transform: "translateY(-30px)", fontSize: "74px", }}>{t("header.message2")}</h1><br />
-          <p style={{ lineHeight: "27px", fontSize: "18px", fontWeight: "500", color: "#404653" }}>
+        <div className="header-central-text text-center">
+          <h1 className='default-title-text header-title-text1'>{t("header.message")}</h1><br />
+          <h1 className='default-title-text header-title-text2'>{t("header.message2")}</h1><br />
+          <p className='default-desc-text'>
             {t("header.descriptionHeader")} <br /> {t("header.descriptionHeader2")} </p>
         </div>
 
@@ -35,9 +35,9 @@ const HeaderComponent = () => {
         <CarouselBox data={advImg} slidesPerView={2} />
       </div>
 
-      <div style={{ padding: "" }} className="header-text-section containerElement text-center">
-        <TitlePage textKey="header.aboutUsTitlePage" />
-        <h1 style={{ fontSize: "44px" }} className='default-title-text'>
+      <div style={{marginTop: "90px"}} className="header-text-section containerElement text-center">
+        <TitlePage textKey="header.aboutUsTitlePage" boolean={false} FontSize={false} padding={false} margin='1rem'/>
+        <h1 className='default-title-text'>
           {t("header.aboutUsTitle")}
         </h1>
         <p className='default-desc-text'>{t("header.aboutUsDesc1")} <br />{t("header.aboutUsDesc2")}<br /> {t("header.aboutUsDesc3")}</p>

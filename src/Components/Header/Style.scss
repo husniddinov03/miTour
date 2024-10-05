@@ -1,29 +1,53 @@
+// .containerElement{
+//     width: 92.2%
+// }
+
 header {
     .header-box {
         display: flex;
         justify-content: space-between;
         align-items: center;
 
+
+        .header-central-text {
+
+            .header-title-text1 {
+                line-height: 90px;
+                font-size: 74px;
+
+                @media (max-width: 425px) {
+                    font-size: 54px;                    
+                }
+            }
+
+            .header-title-text2 {
+                line-height: 90px;
+                transform: translateY(-30px);
+                font-size: 74px;
+
+                @media (max-width: 425px) {
+                    font-size: 54px;                    
+                }
+
+            }
+
+            p {
+                line-height: 27px;
+                color: #404653;
+            }
+        }
+
         .header-left-img {
-            // padding-top: 10px;
             background: white;
             box-shadow: 0px 44px 54px 0px #25373F29;
-
-            // border: 2px solid;
             border: 5px solid #FFFFFF;
-            // padding: 0 0 4px 4px;
             border-radius: 50px;
 
             img {
                 width: 88px;
                 height: 88px;
                 border-radius: 50px;
-                // box-shadow: 0px 14px 54px 0px #25373f98;
             }
-
-            // .header-img-one {
-            //     margin-top: 10px;
-            // }
         }
 
         h1 {
@@ -42,7 +66,6 @@ header {
     .header-banner {
         display: flex;
         justify-content: space-between;
-
         margin-top: 40px;
 
         img {
@@ -50,11 +73,13 @@ header {
             height: 450px;
             border-radius: 24px;
 
-            @media (max-width: 852px) {
-                width: 100%;
-                height: 100%;
-            }
+            // @media (max-width: 852px) {
+            //     width: 100%;
+            //     height: 100%;
+            // }
         }
+
+
     }
 
     .header-text-section {
@@ -62,20 +87,22 @@ header {
         flex-direction: column;
         gap: 10px;
         align-items: center;
-        // margin-top: 100px;
+        border-radius: 24px;
         padding: 100px 340px 100px 340px;
         box-shadow: 0px 0px 54px 0px #25373F14;
 
         h1 {
             font-size: 44px;
             line-height: 64px;
-            font-weight: 700;
+
+            @media (max-width: 425px) {
+                line-height: 20px;
+            }
         }
 
         p {
             font-size: 16px;
             line-height: 27px;
-            font-weight: 500;
         }
 
         .header-text-btns {
@@ -214,7 +241,7 @@ header {
     }
 }
 
-@media (max-width: 376px) {
+@media (max-width: 400px) {
     header {
         .header-box {
             img {
@@ -245,7 +272,7 @@ header {
 
             h1 {
                 font-size: 24px;
-                line-height: 45px;
+                line-height: 35px;
             }
 
             p {

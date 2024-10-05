@@ -3,18 +3,36 @@
 
     .images-sighseening {
         display: flex;
-        flex-direction: column;
+        // flex-direction: column;
+        // align-items ;
         gap: 20px;
         padding-bottom: 50px;
 
 
         img {
-            width: 100%;
-            height: 100%;
-            // width: 433px;
-            // height: 300px;
+            width: 433px;
+            height: 300px;
             border-radius: 16px;
             margin-top: 20px;
+        }
+    }
+
+    @media (max-width: 400px) {
+        width: 90%;
+        margin: auto;
+    }
+}
+
+@media (max-width: 852px) {
+    .sightseeing {
+        .images-sighseening {
+            padding: 0 20px;
+            flex-direction: column;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
         }
     }
 }

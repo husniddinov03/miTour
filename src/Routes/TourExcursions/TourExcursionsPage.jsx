@@ -35,7 +35,7 @@ const TourExcursionsPage = () => {
     },
   ]
   return (
-    <div className='tourExcursions containerElement'>
+    <div className='tourExcursions resp-box2'>
       <PageNavbar dataPage={dataPage} />
       <div className="adv-box">
         {data.map(item => (

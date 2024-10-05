@@ -70,7 +70,8 @@
 @media (max-width: 768px) {
     .services {
         .servicesTitle {
-            flex-direction: column;
+            // flex-direction: column;
+            margin-bottom: 30px;
             align-items: center;
 
             h1 {

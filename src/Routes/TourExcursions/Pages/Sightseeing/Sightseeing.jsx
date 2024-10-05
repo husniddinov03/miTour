@@ -6,7 +6,7 @@ import "./Style.scss"
 import CardPage from '../../../../Components/PageCard/CardPage'
 
 const Sightseeing = () => {
-  
+
   const dataPage = [
     {
       id: 1,
@@ -35,7 +35,7 @@ const Sightseeing = () => {
   ]
 
   return (
-    <div className='sightseeing containerElement'>
+    <div className='sightseeing resp-box2'>
       <PageNavbar dataPage={dataPage} />
       {data.map(item => (
         <CardPage key={item.id} item={item} advImg={images} />

@@ -21,7 +21,7 @@ const Services = () => {
       <div id={uuid} style={{ display: "flex", marginTop: "100px", margin: "30px" }} className="servicesBox">
         {data.map((datas) => (
           <div key={datas.id} className="services-item" style={{
-          height: "230px", padding: "40px", boxShadow: "0px 0px 54px 0px #25373F14", borderRadius: "20px"
+          height: "230px", padding: "30px", boxShadow: "0px 0px 54px 0px #25373F14", borderRadius: "20px"
           }}>
             <img src={datas.icon} alt="No icon" />
             <h3 style={{ fontSize: "24px" }} className='default-title-text'>{t(datas.titleKey)}</h3>

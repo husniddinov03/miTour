@@ -2,17 +2,17 @@ import { sightseeingImg1, sightseeingImg2, sightseeingImg3 } from "../../../imag
 
 const Images = [
     {
-        id: "1",
+        id: 1,
         img: sightseeingImg1,
         part: "one"
     },
     {
-        id: "2",
+        id: 2,
         img: sightseeingImg2,
         part: "one"
     },
     {
-        id: "3",
+        id: 3,
         img: sightseeingImg3,
         part: "one"
     },

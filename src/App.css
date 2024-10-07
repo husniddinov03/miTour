@@ -1,8 +1,19 @@
+@font-face {
+    font-family: "HelveticaNowDisplayBold";
+    src: url(./helvetica-now-display/HelveticaNowDisplay-Bold.woff) format('woff'),
+}
+
+@font-face {
+    font-family: "HelveticaNowDisplayMedium";
+    src: url(./helvetica-now-display/HelveticaNowDisplay-Medium.woff);
+}
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Helvetica Now Display;
+    /* font-family: Helvetica Now Display; */
     transition: 500ms;
 }
 
@@ -55,12 +66,15 @@ ol {
     font-weight: 700;
     color: #101828;
     margin: 0;
+    font-family: "HelveticaNowDisplayBold";
+
 }
 
 .default-desc-text {
     font-weight: 500;
     color: #404653;
     font-size: 18px;
+    font-family: "HelveticaNowDisplayMedium";
     margin: 0;
 }
 

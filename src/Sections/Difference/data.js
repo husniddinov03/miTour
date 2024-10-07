@@ -5,7 +5,6 @@ const data = [
         id: 1,
         icon: DifferenceIcon1,
         titleKey: "differenceSec.item1.title",
-        descriptionKey: "differenceSec.item1.description",
         padding: "50px"
     },
     {

@@ -23,7 +23,7 @@ const Contact = () => {
           </b>
         </div>
         <div className="contact-bottom-text">
-          <h1>{t("contact.adressTitle")}</h1>
+          <h1 >{t("contact.adressTitle")}</h1>
           <p className='default-desc-text'>{t("contact.adress")}</p>
         </div>
         <Link className='contact-link' to='https://web.whatsapp.com/'><img src={WhatsappIcon} alt="No icon" />Whatsapp</Link>

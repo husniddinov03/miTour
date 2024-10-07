@@ -28,21 +28,21 @@ const data = [
     //     part: "three"
     // },
     {
-        id: 5,
+        id: 4,
         title: "advantures.item4.title",
         descriptions: "advantures.item4.description",
         btnBoolean: false,
         part: "three"
     },
     {
-        id: 6,
+        id: 5,
         title: "advantures.item5.title",
         descriptions: "advantures.item5.description",
         btnBoolean: false,
         part: "four"
     },
     {
-        id: 7,
+        id: 6,
         title: "advantures.item6.title",
         descriptions: "advantures.item6.description",
         btnBoolean: false,

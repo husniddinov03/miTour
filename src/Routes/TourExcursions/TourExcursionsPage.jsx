@@ -7,32 +7,33 @@ import CardPage from '../../Components/PageCard/CardPage';
 
 const TourExcursionsPage = () => {
 
-  const { t } = useTransition("globbal")
   const dataPage = [
     {
       id: 1,
+      text: "itemNavTour.selfDrive",
+      to: "/selfDrive",
+      active: false
+    },
+
+    {
+      id: 2,
       text: "itemNavTour.advantures",
       to: "/tourExcursions",
       active: true
     },
     {
-      id: 2,
+      id: 3,
       text: "itemNavTour.attractions",
       to: "/attractions",
       active: false
     },
     {
-      id: 3,
+      id: 4,
       text: "itemNavTour.sightseeing",
       to: "/sightseeing",
       active: false
     },
-    {
-      id: 4,
-      text: "itemNavTour.selfDrive",
-      to: "/selfDrive",
-      active: false
-    },
+
   ]
   return (
     <div className='tourExcursions resp-box2'>

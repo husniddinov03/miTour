@@ -15,28 +15,29 @@ const SelfDrive = () => {
   const dataPage = [
     {
       id: 1,
+      text: "itemNavTour.selfDrive",
+      to: "/selfDrive",
+      active: true
+    },
+    {
+      id: 2,
       text: "itemNavTour.advantures",
       to: "/tourExcursions",
       active: false
     },
     {
-      id: 2,
+      id: 3,
       text: "itemNavTour.attractions",
       to: "/attractions",
       active: false
     },
     {
-      id: 3,
+      id: 4,
       text: "itemNavTour.sightseeing",
       to: "/sightseeing",
       active: false
     },
-    {
-      id: 4,
-      text: "itemNavTour.selfDrive",
-      to: "/selfDrive",
-      active: true
-    },
+
   ]
 
   return (
@@ -47,7 +48,7 @@ const SelfDrive = () => {
         data.map(datas => (
           <div key={datas.id} className="selfDrive-box d-flex flex-column">
 
-            <h2 className='default-title-text'>{t(datas.title)}</h2>
+            <h2 style={{fontWeight: "660"}} className=''>{t(datas.title)}</h2>
             <br />
             <div className="selfDrive-items flex-column">
               
@@ -70,14 +71,14 @@ const SelfDrive = () => {
       <div className="selfDrive-imgs">
         {
           advImg.map(img => (
-            <div className="selfDrive-img">  
+            <div key={img.id} className="selfDrive-img">  
             <img key={img.id} src={img.img} alt="No image" />
             </div>
           ))
         }
       </div>
 
-      <TitlePage textKey="selfDrive.titlePage" />
+      <TitlePage textKey="selfDrive.titlePage" boolean={false} FontSize={false} padding={false} margin="50px 0px 30px 0"/>
 
 
       <div className="selfDrive-serviceData">

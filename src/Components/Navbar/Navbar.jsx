@@ -33,7 +33,7 @@ const Navbar = () => {
                     <NavLink to='/services' className={({ isActive }) => isActive ? "navbar-link active" : "navbar-link"} style={helpCss[0]}>
                         <button className="nav-button">{t('servicesSec.titleRight')}</button>
                     </NavLink>
-                    <NavLink to='/tourExcursions' className={({ isActive }) => isActive ? "navbar-link active" : "navbar-link"} style={helpCss[0]}>
+                    <NavLink to='/selfDrive' className={({ isActive }) => isActive ? "navbar-link active" : "navbar-link"} style={helpCss[0]}>
                         <button className="nav-button">{t('navbar.tourExcursions')}</button>
                     </NavLink>
                     <NavLink to='/miceService' className={({ isActive }) => isActive ? "navbar-link active" : "navbar-link"} style={helpCss[0]}>

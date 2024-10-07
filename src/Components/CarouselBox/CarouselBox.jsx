@@ -7,9 +7,9 @@ import './Style.scss';
 import 'swiper/css';
 import 'swiper/css/autoplay';
 
-const HomeCarousel = ({ data, slidesPerView = 4 }) => {
+const HomeCarousel = ({ data, slidesPerView = 4 , width}) => {
     return (
-        <div className="homeCarousel containerElement">
+        <div style={{width: width}} className="homeCarousel containerElement">
             <Swiper
                 className='swiper'
                 modules={[Autoplay]}
@@ -22,7 +22,7 @@ const HomeCarousel = ({ data, slidesPerView = 4 }) => {
                 loop={true}
             >
                 {data.map(datas => (
-                    <SwiperSlide key={datas.id} className="swiper-slide">
+                    <SwiperSlide  key={datas.id} className="swiper-slide">
                         <img style={{ width: data? data.width : "100%", height: data ? data.height : "auto" }} src={datas.img} alt="No image" />
                     </SwiperSlide>
                 ))}

@@ -42,7 +42,7 @@ const dataPage = [
       <div className="attractions">
         <h1 className='default-title-text'>{t("attractions.title")}</h1><br />
         <p className='default-desc-text'>{t("attractions.description")}</p>
-        <div className="attractions-carousel">
+        <div className="attractions-carousel mt-4">
           <CarouselBox data={advImg} slidesPerView={3} />
         </div>
       </div>

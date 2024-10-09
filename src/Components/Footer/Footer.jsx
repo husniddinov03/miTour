@@ -35,7 +35,7 @@ const Footer = () => {
 
                 <div className="footer-items">
                     <h1 className='default-title-text'>Whatsapp</h1>
-                    <Link className='footer-bottom-link default-desc-text text-light flex-element' to='https://web.whatsapp.com/'><img src={WhatsappIcon} alt="No icon" /> Whatsapp</Link>
+                    <a target="_blank" className='footer-bottom-link default-desc-text text-light flex-element' href='https://api.whatsapp.com/send?phone=971565481752&text=I_want_to_enquire_about%20The%20Best%20Dubai%20Tours%20and%20Things%20to%20Do%20in%202024'><img src={WhatsappIcon} alt="No icon" /> Whatsapp</a>
                 </div>
             </div>
         </footer>

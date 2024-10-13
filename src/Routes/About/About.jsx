@@ -25,7 +25,7 @@ const About = () => {
       text: "itemNavAbout.gallery",
       to: "/aboutGallery",
       active: false,
-      disbled: true
+      disabled: true
     },
   ];
 

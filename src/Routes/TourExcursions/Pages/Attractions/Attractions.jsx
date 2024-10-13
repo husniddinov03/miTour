@@ -6,34 +6,34 @@ import { useTranslation } from 'react-i18next'
 
 
 const Attractions = () => {
-const {t}=useTranslation("globbal")
+  const { t } = useTranslation("globbal")
 
-const dataPage = [
-  {
-    id: 1,
-    text: "itemNavTour.advantures",
-    to: "/tourExcursions",
-    active: false
-  },
-  {
-    id: 2,
-    text: "itemNavTour.attractions",
-    to: "/attractions",
-    active: true
-  },
-  {
-    id: 3,
-    text: "itemNavTour.sightseeing",
-    to: "/sightseeing",
-    active: false
-  },
-  {
-    id: 4,
-    text: "itemNavTour.selfDrive",
-    to: "/selfDrive",
-    active: false
-  },
-]
+  const dataPage = [
+    {
+      id: 1,
+      text: "itemNavTour.selfDrive",
+      to: "/selfDrive",
+      active: false
+    },
+    {
+      id: 2,
+      text: "itemNavTour.advantures",
+      to: "/tourExcursions",
+      active: false
+    },
+    {
+      id: 3,
+      text: "itemNavTour.attractions",
+      to: "/attractions",
+      active: true
+    },
+    {
+      id: 4,
+      text: "itemNavTour.sightseeing",
+      to: "/sightseeing",
+      active: false
+    },
+  ]
 
   return (
     <div className='attractions containerElement'>
